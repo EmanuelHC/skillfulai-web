@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d37f762.css",
+    "main.js": "/static/js/main.867b78e1.js",
+    "static/media/ai.png": "/static/media/ai.aa60586ba1ba53762d94.png",
+    "static/media/blog4.jpeg": "/static/media/blog4.d386ba332447238c0a25.jpeg",
+    "static/media/blog5.jpeg": "/static/media/blog5.573dc302d59f521f6c67.jpeg",
+    "static/media/blogb.jpeg": "/static/media/blogb.bdf34c4359d19ef5e80e.jpeg",
+    "static/media/possibility.jpeg": "/static/media/possibility.bbf513e30fa9681521fb.jpeg",
+    "static/media/blogc.jpeg": "/static/media/blogc.6c7dbbb317cfe4be4b41.jpeg",
+    "static/media/blog2.jpeg": "/static/media/blog2.eebbfff9b8a8e0012281.jpeg",
+    "static/media/aws.png": "/static/media/aws.99ae03c5e8dbc24c9d7e.png",
+    "static/media/openai2.png": "/static/media/openai2.0ca710acbf9199b32c34.png",
+    "static/media/skilfull_AI_transparent.svg": "/static/media/skilfull_AI_transparent.c878ed2e3ab233a35e00365662014b5e.svg",
+    "static/media/langchain.png": "/static/media/langchain.e5bccfac8a5c3c09683c.png",
+    "static/media/eth.png": "/static/media/eth.503181161a9fc14edabf.png",
+    "static/media/people.png": "/static/media/people.5cd2d6fbcd48bd63f106.png",
+    "index.html": "/index.html",
+    "main.3d37f762.css.map": "/static/css/main.3d37f762.css.map",
+    "main.867b78e1.js.map": "/static/js/main.867b78e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d37f762.css",
+    "static/js/main.867b78e1.js"
+  ]
+}
