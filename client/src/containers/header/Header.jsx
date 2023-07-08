@@ -13,7 +13,7 @@ const Header = () => {
     event.preventDefault();
 
     try {
-      await axios.post('http://localhost:5000/emails', { email });
+      await axios.post('https://skillful-ai-io.onrender.com/emails', { email });
       setEmail('');
       setMessage('Congratulations for joining the waiting list!');
       setShowModal(true);
