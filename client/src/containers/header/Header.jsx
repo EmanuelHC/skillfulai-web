@@ -13,9 +13,12 @@ const Header = () => {
     event.preventDefault();
 
     try {
-      await axios.post('https://skillful-ai-io.onrender.com/emails', { email });
+      const date = new Date().toISOString();
+      await axios.post('http://localhost:5000/emails', { email, date });
+      //await axios.post('https://skillful-ai-io.onrender.com/emails', { email, date });
+
       setEmail('');
-      setMessage('Congratulations for joining the waiting list!');
+      setMessage('Congratulations you have joined to the waiting list!');
       setShowModal(true);
     } catch (error) {
       setMessage('Something went wrong, please try again later.');

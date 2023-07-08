@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
 
-const EmailSchema = new mongoose.Schema({
+const Email = new mongoose.Schema({
     email: { type: String, required: true },
+    date: { type: String, required: true },
 });
 
-const Email = mongoose.model('Email', EmailSchema);
+const EmailSchema = mongoose.model('Email', Email);
 
-export default Email;
+export default EmailSchema;
