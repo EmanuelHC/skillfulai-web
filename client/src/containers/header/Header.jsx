@@ -14,8 +14,8 @@ const Header = () => {
 
     try {
       const date = new Date().toISOString();
-      await axios.post('http://localhost:5000/emails', { email, date });
-      //await axios.post('https://skillful-ai-io.onrender.com/emails', { email, date });
+      //await axios.post('http://localhost:5000/emails', { email, date });
+      await axios.post('https://skillful-ai-io.onrender.com/emails', { email, date });
 
       setEmail('');
       setMessage('Congratulations you have joined to the waiting list!');
