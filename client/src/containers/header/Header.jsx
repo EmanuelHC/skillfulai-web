@@ -28,24 +28,12 @@ const Header = () => {
   return (
     <div className="skillfulai__header section__padding" id="home">
       <div className="skillfulai__header-content">
-        <h1 className="gradient__text">Let&apos;s Build Something amazing with Skillful-AI</h1>
-        <p>Welcome to Skillful AI, where we transform the art of personalization into a science. We empower you to craft your own AI experience, tailored to your unique needs and skills. With our innovative platform, you can create, share, and monetize AI skills, shaping the future of personalized AI. Let's build something amazing with Skillful AI, where your vision becomes reality.</p>
+        <h1 className="header_gradient__text">Let&apos;s Build Something amazing with Skillful-AI</h1>
+        <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
+        <button type="submit">WHITELIST ME</button>
+        
 
-        <form onSubmit={handleSubmit} className="skillfulai__header-content__input">
-          <input
-            type="email"
-            placeholder="Your Email Address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <button type="submit">Get Started</button>
-        </form>
-
-        <div className="skillfulai__header-content__people">
-          <img src={people} alt='people' />
-          <p>1,600 people requested access a visit in last 24 hours</p>
-        </div>
+        
       </div>
 
       <div className="skillfulai__header-image">

@@ -19,20 +19,7 @@ a {
 .gradient__bg 
 
 {
-  /* ff 3.6+ */
-  background: -moz-radial-gradient(circle at 3% 25%, rgba(20, 20, 20, 1) 53%, rgba(137, 130, 207, 1) 100%);
-
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-radial-gradient(circle at 3% 25%, rgba(20, 20, 20, 1) 53%, rgba(137, 130, 207, 1) 100%);
-
-  /* opera 11.10+ */
-  background: -o-radial-gradient(circle at 3% 25%, rgba(20, 20, 20, 1) 53%, rgba(137, 130, 207, 1) 100%);
-
-  /* ie 10+ */
-  background: -ms-radial-gradient(circle at 3% 25%, rgba(20, 20, 20, 1) 53%, rgba(137, 130, 207, 1) 100%);
-
-  /* global 92%+ browsers support */
-  background: radial-gradient(circle at 3% 25%, rgba(20, 20, 20, 1) 53%, rgba(137, 130, 207, 1) 100%);
+  background: linear-gradient(180deg, #030046 0%, #02012D 100%);
 }
 .gradient__text {
     /*color: #fff; */

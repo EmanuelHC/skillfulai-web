@@ -1,7 +1,7 @@
 .skillfulai__header {
     display: flex;
     flex-direction: row;
-    background: linear-gradient(180deg, #030046 0%, #02012D 100%);
+    
 }
 
 .skillfulai__header-container {
@@ -39,30 +39,18 @@
     margin-top: 1.5rem;
 }
 
-.skillfulai__header-content__input{
-    width: 100%;
-    margin: 2rem 0 1rem;
-    display: flex;
-}
 
-.skillfulai__header-content__input input{
-    flex: 2;
-    width: 100%;
-    min-height: 50px;
-    background: #052D56;
-    font-family: var(--font-family);    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 27px;
-    color: #fff;
-    background: var(--color-footer);
-    border: 2px solid var(--color-footer);
-    padding: 0 1rem;
-    outline: none;
 
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+.header_gradient__text {
+font-family: Red Hat Display;
+font-size: 60px;
+font-style: normal;
+font-weight: 800;
+line-height: 70px; /* 116.667% */
+background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 
 }
 
@@ -85,31 +73,7 @@
     border-bottom-right-radius: 5px;
 }
 
-.skillfulai__header-content__people {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 
-    margin-top:  2rem;
-}
-
-.skillfulai__header-content__people img{
-    width: 181.79px;
-    height: 38px;
-
-}
-
-.skillfulai__header-content__people p {
-    margin: 0 0 0 1rem;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 37.611px;  
-    color: #FFF;
-    text-align: center;
-   
-}
 
 .skillfulai__header-image {
     flex: 1;
@@ -119,7 +83,7 @@
 }
 
 .skillfulai__header-image img {
-width: 100%;
+width: 70%;
 height: 100%;
 
 }
