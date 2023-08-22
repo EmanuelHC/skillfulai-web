@@ -1,147 +1,140 @@
 .skillfulai__navbar {
-   display: flex;
-   justify-content: space-between;
-   align-items:  center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    background: linear-gradient(180deg, #030046 0%, #02012D 100%);
+}
 
-   padding: 0.01rem 3rem;
-  }
+.skillfulai__navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.skillfulai__navbar-brand_container {
+    display: flex;
+    flex-direction: row;
+    width: 374px;
+    height: 76px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.49px;
+    flex-shrink: 0;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+.space-after {
+    margin-right: 10px;
+}
+
+.skillfulai__navbar-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7%; /* Same margin as the logo for symmetry */
+    gap: 2rem;
+}
+
+.skillfulai__navbar-buy button,
+.skillfulai__navbar-app button,
+.skillfulai__navbar-sign button {
+    padding: 0.5rem 1rem;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.skillfulai__navbar-buy button {
+    background: linear-gradient(131deg, #9D4F9D 0%, #6060F2 100%);
+}
+
+.skillfulai__navbar-app button {
+    background: linear-gradient(131deg, #6060F2 0%, #B0ACEB 100%);
+}
+
+.skillfulai__navbar-sign button {
+    background: var(--button-grad-1, linear-gradient(131deg, #F05F47 0%, #DE3593 100%));
+}
 
 .skillfulai__navbar-links {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
-    align-items:  center;
- 
-    padding: 1rem 6rem;
-   }
-   
-  
-.skillfulai__navbar-links_logo{
-    margin-right: 2rem ;
-  }
-  
-.skillfulai__navbar-links_logo img {
-    width: 140px;
-    height: 120px;
-  }  
+    justify-content: center; /* Center the links */
+    align-items: center;
+    padding: 1rem 0rem;
+    position: relative;
+    width: 1380px; /* Same width as the line */
+    margin: 0 auto; /* Center the links container */
+}
 
 .skillfulai__navbar-links_container {
     display: flex;
+    justify-content: space-between;
+    width: 100%; /* Use full width of the parent */
 }
 
-.skillfulai__navbar-sign img {
-    display: flex;
-    justify-content: flex-end;
-    align-items:  center;
-  }
-
-.skillfulai__navbar-links_container p, 
-.skillfulai__navbar-sign p, 
-.skillfulai__navbar-links_menu p {
-    color: #fff ;
-    font-family:   var(--font-family); 
-    font-weight: 500;
-    font-size:  18px;
-    line-height: 25px;
-    text-transform: capitalize;
-    margin: 0 1rem;
-    cursor: pointer;
-  }
-
-.skillfulai__navbar-sign button,
-.skillfulai__navbar-menu_container button {
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background: #FF4820;
-    font-family: var(--font-family);
-    font-weight: 500;
+.skillfulai__navbar-links_container p {
+    color: #FFF;
+    font-family: Red Hat Display;
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 5px;
-    border:  0;
-    outline: none;
-    cursor: pointer;
-
-}
-
-.skillfulai__navbar-sign {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* adjust as needed */
-    width: 200px; /* adjust as needed */
-}
-
-.skillfulai__navbar-menu{
-    margin-left: 1rem;
-
-    display: none;
-    position: relative;
-}
-
-.skillfulai__navbar-menu svg {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 1rem;
+    text-transform: capitalize;
     cursor: pointer;
 }
 
-.skillfulai__navbar-menu_container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    
-    text-align: end;
-    background: var(--color-footer);
-    padding: 2rem;
+.skillfulai__navbar-links::after {
+    content: "";
+    display: block;
+    width: 1380px;
+    height: 1px;
+    background-color: #8E8FF5;
     position: absolute;
-    top: 40px;
-    right: 0;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
-
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.skillfulai__navbar-menu_container p{
-    margin: 1rem 0;
 
-}
 
-.skillfulai__navbar-menu-container-links-sign{
-    display: none;
-}
-
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1050px) {
     .skillfulai__navbar-links_container {
-        
-         display: none; 
+        display: none;
     }
     .skillfulai__navbar-menu {
         display: flex;
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
     .skillfulai__navbar {
         padding: 2rem 4rem;
     }
 }
 
-
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
     .skillfulai__navbar {
         padding: 2rem;
     }
-
-    .skillfulai__navbar-sign{
+    .skillfulai__navbar-sign {
         display: none;
     }
-
-    .skillfulai__navbar-menu_container{
-        top: 20px
+    .skillfulai__navbar-menu_container {
+        top: 20px;
     }
-
-    .skillfulai__navbar-menu-container-links-sign{
+    .skillfulai__navbar-menu-container-links-sign {
         display: block;
-
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import people from '../../assets/people.png';
-import ai from '../../assets/ai.png';
+import logo from '../../assets/logo.svg';
 import './header.css';
 
 const Header = () => {
@@ -49,7 +49,7 @@ const Header = () => {
       </div>
 
       <div className="skillfulai__header-image">
-        <img src={ai} alt='ai'/>
+        <img src={logo} alt='logo'/>
       </div>
 
       {showModal && (

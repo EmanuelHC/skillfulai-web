@@ -1,7 +1,7 @@
 .skillfulai__header {
     display: flex;
     flex-direction: row;
-
+    background: linear-gradient(180deg, #030046 0%, #02012D 100%);
 }
 
 .skillfulai__header-container {
