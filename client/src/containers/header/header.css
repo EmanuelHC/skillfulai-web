@@ -1,13 +1,36 @@
 .skillfulai__header {
     display: flex;
     flex-direction: row;
-    
+    height: 70%; /* Adjust based on your design */
+    margin-top: 0rem;
+    position: relative;
+    overflow: hidden; /* Add this line */
 }
 
-.skillfulai__header-container {
-    display: flex;
-    justify-content: space-between; 
-  } 
+.skillfulai__header-background {
+    position: absolute;
+    width: 100vw; /* Full viewport width */
+    height: 100%; /* Full height of the parent container */
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+    object-fit: cover; /* This will ensure the image covers the container while maintaining its aspect ratio */
+}
+
+.skillfulai__header-background::after {
+    content: "";
+    display: block;
+    width: 1380px;
+    height: 1px;
+    background-color: #8E8FF5;
+    position: absolute;
+    
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-10%);
+    z-index: 1;
+}
 
 .skillfulai__header-content{
     flex: 1;
@@ -15,29 +38,94 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    
-    margin-right: 5rem;
+  
+    margin-right: 30rem;
+    margin-top: -5rem;
 }
 
 
 .skillfulai__header-content h1{
-    font-family: var(--font-family);
-    font-size: 62px;
+    width: 685px;
+    height: 163px;
+    flex-shrink: 0;
+    font-family: Red Hat Display;
+    font-size: 60px;
+    font-style: normal;
     font-weight: 800;
-    line-height: 75px;
-    letter-spacing: -0.04em;
+    line-height: 70px; /* 116.667% */
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    margin-left: 5rem;
 
 }
 
 .skillfulai__header-content p{
-    font-family: var(--font-family);
-    font-size: normal;
-    font-weight: normal;
+    width: 554px;
+    height: 108px;
+    flex-shrink: 0;
+    color: #B0ACEB;
+    font-family: Red Hat Display;
     font-size: 20px;
-    line-height: 27px;
-    color: var(--color-text);
-    margin-top: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1rem;
+    z-index: 1;
+    margin-left: 5rem;
+
 }
+
+
+
+.skillfulai__header-content button {
+    width: 254px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 5px; /* Rounded corners on all sides */
+    background: var(--button-grad-0, linear-gradient(227deg, #FF4820 0%, #DE3593 100%));
+    color: #FFF;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-left: 5rem;
+
+   
+    border: none; /* Remove any default borders */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+    padding: 12px 24px; /* Balanced padding */
+    z-index: 1;
+}
+
+.skillfulai__header-content button:hover {
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth on hover */
+}
+
+
+.skillfulai__header-content::after {
+    content: "";
+    display: block;
+    width: 1380px;
+    height: 1px;
+    background-color: #8E8FF5;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem; /* Adjust this value if needed to position the line correctly */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+
 
 
 
@@ -52,26 +140,11 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 
+
 }
 
-.skillfulai__header-content__input button{
-    flex: 0.6;
-    width: 100%;
-    min-height: 50px;
-    font-family: var(--font-family);   
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 27px;
-    background: #FF4820;
-    color: #FFF;
-    cursor: pointer;
-    outline: none;
-    padding: 0 1rem;
-    border: none;
 
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+
 
 
 
@@ -83,32 +156,16 @@ background-clip: text;
 }
 
 .skillfulai__header-image img {
-width: 70%;
-height: 100%;
+    width: 373.069px;
+    height: 378px;
+    flex-shrink: 0;
+    margin-top: -5rem;
+    margin-right: -10%;
+    z-index: 1
 
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .modal h2 {
-    color: white;
-  }
-  
-  .modal button {
-    margin-top: 1rem;
-  }
-  
+
 
 @media screen and (max-width: 1050px) {
     .skillfulai__header {

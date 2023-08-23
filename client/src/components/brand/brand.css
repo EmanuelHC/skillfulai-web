@@ -3,7 +3,7 @@
     flex-wrap: nowrap; /* Prevents the items from wrapping onto the next line */
     justify-content: space-between; /* Distributes the items evenly along the horizontal line with equal space around them */
     align-items: center; /* Aligns items vertically in the center */
-    padding: 20px; /* Adds some padding around the items */
+    height: 5%; 
 }
 
 .skilfullai__brand div {

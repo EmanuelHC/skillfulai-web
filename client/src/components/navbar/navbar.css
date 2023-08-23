@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 3rem;
-  
+ 
+    height: 202px; /* Set the height to 202 pixels */
 }
 
 .skillfulai__navbar-top {

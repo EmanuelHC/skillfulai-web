@@ -1,11 +1,11 @@
 import React from 'react';
-import { openai, aws, langchain, pinecone, eth,  } from './import';
+import { pytorch, aws, langchain, pinecone, eth,  } from './import';
 import './brand.css';
 
 const Brand = () => (
   <div className="skilfullai__brand section__padding">
     <div>
-      <img src={openai} alt='openai'/>
+      <img src={pytorch} alt='openai'/>
     </div>
     <div>
       <img src={aws} alt='aws' />

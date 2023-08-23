@@ -1,5 +1,5 @@
 import React from 'react';
-import skillfulaiLogo from '../../assets/skilfull_AI_transparent.svg'; 
+import skillfulaiLogo from '../../assets/logo.svg'; 
 import './footer.css';
 
 const Footer = () => (
