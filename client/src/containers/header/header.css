@@ -9,15 +9,15 @@
 
 .skillfulai__header-background {
     position: absolute;
-    width: 100vw; /* Full viewport width */
-    height: 100%; /* Full height of the parent container */
-    top: 0;
-    left: 0;
+    width: 100%; /* Adjust this to scale the image. E.g., 90% will downscale the image to 90% of its original size */
+    height: 100%; /* Adjust this to scale the image. E.g., 90% will downscale the image to 90% of its original size */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ; /* Position the image and scale it down to 90% of its original size */
+    z-index: 0;; /* Center the image */
     z-index: 0;
-    
     object-fit: cover; /* This will ensure the image covers the container while maintaining its aspect ratio */
 }
-
 .skillfulai__header-background::after {
     content: "";
     display: block;
@@ -41,18 +41,19 @@
   
     margin-right: 30rem;
     margin-top: -5rem;
+    
 }
 
 
 .skillfulai__header-content h1{
     width: 685px;
-    height: 163px;
+    
     flex-shrink: 0;
     font-family: Red Hat Display;
     font-size: 60px;
     font-style: normal;
     font-weight: 800;
-    line-height: 70px; /* 116.667% */
+   
     background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -64,7 +65,7 @@
 
 .skillfulai__header-content p{
     width: 554px;
-    height: 108px;
+ 
     flex-shrink: 0;
     color: #B0ACEB;
     font-family: Red Hat Display;
@@ -82,7 +83,7 @@
 
 .skillfulai__header-content button {
     width: 254px;
-    height: 60px;
+    height: 3.5rem;
     flex-shrink: 0;
     border-radius: 5px; /* Rounded corners on all sides */
     background: var(--button-grad-0, linear-gradient(227deg, #FF4820 0%, #DE3593 100%));

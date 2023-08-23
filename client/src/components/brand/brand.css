@@ -3,18 +3,24 @@
     flex-wrap: nowrap; /* Prevents the items from wrapping onto the next line */
     justify-content: space-between; /* Distributes the items evenly along the horizontal line with equal space around them */
     align-items: center; /* Aligns items vertically in the center */
+    flex-direction: column;
     height: 5%; 
 }
 
-.skilfullai__brand div {
-    flex: 1; /* Each item will grow and shrink at the same rate, ensuring they remain the same size */
+
+.skilfullai__brand-row1 {
+    gap: 10rem; /* Creates a gap between the images */
+    margin-top: -4%;
+    margin-left: 12%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0 1px; /* Adds horizontal padding to create space between the images */
 }
 
-.skilfullai__brand div img {
-    max-width: 30%; /* Reduces the image size to 10% of its original size */
-    height: auto; /* Keeps the aspect ratio of the image */
+.skilfullai__brand-row2 {
+    gap: 10rem; /* Creates a gap between the images */
+   
+    margin-left: 8%;
+    display: flex;
+    justify-content: center;
 }
+

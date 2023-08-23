@@ -1,13 +1,26 @@
+
+import aws from '../../assets/AWS.svg';
+import bnb from '../../assets/BNB.svg';
 import pytorch from '../../assets/PyTorch.svg';
-import aws from '../../assets/aws.png';
-import langchain from '../../assets/langchain.png';
-import pinecone from '../../assets/pinecone2.png';
-import eth from '../../assets/eth.png';
+import ethereum from '../../assets/Ethereum.svg';
+import tensorflow from '../../assets/TensorFlow.svg';
+import langchain from '../../assets/LangChain_logo 1.png';
+import huggingface from '../../assets/HuggingFace.svg';
+import polygonID from '../../assets/PolygonID.svg';
+import wallet_connect from '../../assets/WalletConnect.svg';
+import polygon from '../../assets/Polygon.svg';
+
 
 export {
-  pytorch,
   aws,
+  bnb,
+  pytorch,
+  ethereum,
+  tensorflow,
   langchain,
-  pinecone,
-  eth,
+  huggingface,
+  polygonID,
+  wallet_connect,
+  polygon
+
 };
