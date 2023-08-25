@@ -13,9 +13,14 @@ const App = () => {
         <Header/> 
         <Brand/> 
       </div>
-      
+      <div  className='wskai'>
       <WhatSKILLFULAI/>
+      </div>
+      <div>
       <Features/>
+      </div>
+     
+  
       <Possibility/>
       <CTA/>
       <Blog/>

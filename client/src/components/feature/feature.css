@@ -1,11 +1,12 @@
 .skillfulai__features-container__feature {
-    width: 100%;
+  
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
 
     margin: 1rem;
+    margin-left: 2rem;
 
 }
 
@@ -14,21 +15,23 @@
     max-width: 180px;
     margin-right: 2rem;
 
+
 }
 
 .skillfulai__features-container__feature-title h1{
     color: #FFF;
-    font-size: 18px;
-    font-family: var(--font-family);
+    font-family: Red Hat Display;
+    font-size: 32px;
+    font-style: normal;
     font-weight: 800;
-    line-height: 24px;
-    letter-spacing: -0.04em;
+    line-height: 32px;
+   
 }
 
 .skillfulai__features-container__feature-title div {
-    width: 38px ;
+    width: 98px ;
     height: 3px;
-    background: var(--gradient-bar);
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 0.25rem;
 
@@ -41,12 +44,17 @@
 }
 
 .skillfulai__features-container_feature-text p {
-    font-family: var(--font-family);
+    margin-right: 2rem;
+    color: #B0ACEB;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--color-text);
+    line-height: normal;
 }
+
+
+
 
 @media screen and (max-width: 550px) {
     .skillfulai__features-container__feature-title h1 {

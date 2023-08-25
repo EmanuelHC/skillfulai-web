@@ -24,13 +24,14 @@ const featuresData = [
 const Features = () => (
   <div className="skillfulai_features section__padding" id="features">
     <div className="skillfulai_features-heading">
-      <h1 className="gradient__text">The Future is Now Unleash your creativity with Skillful-AI. Personalize, innovate, and revolutionize the way you interact with technology. With Skillful-AI, you're not just adapting to the future, you're creating it.</h1>
+      <h1 className="gradient__text">Skillful AI offers a comprehensive ecosystem to develop, deploy, own and exchange personalized AI assistants from your computer or smartphone..</h1>
       <p>Request Early Access to Get Started</p>
     </div>
-    <div className="skillfulai_features-container">
-      {featuresData.map((item, index) => (
+    
+     <div className="skillfulai_features-container">
+     {featuresData.map((item, index) => (
         <Feature title={item.title} text={item.text} key={item.title + index} />
-      ))}
+      ))}  
     </div>
   </div>
 );

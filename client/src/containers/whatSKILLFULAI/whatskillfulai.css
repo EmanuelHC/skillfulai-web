@@ -2,80 +2,110 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    height: 100vh; 
     
 
-    
-        /* ff 3.6+ */
-        background: -moz-radial-gradient(circle at 0% 26%, rgba(0, 0, 0, 1) 0%, rgba(63, 31, 133, 1) 85%, rgba(63, 30, 133, 1) 92%, rgba(95, 63, 173, 1) 100%);
-    
-        /* safari 5.1+,chrome 10+ */
-        background: -webkit-radial-gradient(circle at 0% 26%, rgba(0, 0, 0, 1) 0%, rgba(63, 31, 133, 1) 85%, rgba(63, 30, 133, 1) 92%, rgba(95, 63, 173, 1) 100%);
-    
-        /* opera 11.10+ */
-        background: -o-radial-gradient(circle at 0% 26%, rgba(0, 0, 0, 1) 0%, rgba(63, 31, 133, 1) 85%, rgba(63, 30, 133, 1) 92%, rgba(95, 63, 173, 1) 100%);
-    
-        /* ie 10+ */
-        background: -ms-radial-gradient(circle at 0% 26%, rgba(0, 0, 0, 1) 0%, rgba(63, 31, 133, 1) 85%, rgba(63, 30, 133, 1) 92%, rgba(95, 63, 173, 1) 100%);
-    
-        /* global 92%+ browsers support */
-        background: radial-gradient(circle at 0% 26%, rgba(0, 0, 0, 1) 0%, rgba(63, 31, 133, 1) 85%, rgba(63, 30, 133, 1) 92%, rgba(95, 63, 173, 1) 100%);
     }
 
+    .skillfulai__wskai-row1 {
+        display: flex;
+        margin-top: 2%;
+        margin-left: 2%;
 
-.skillfulai__wskai-feature {
-    display: flex;
-}
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    
+
+
+
+    .skillfulai__wskai-row1  h1{
+        color: #FFF;
+        font-family: Red Hat Display;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 70px;
+        width: 301px;
+        height: 143px;
+        flex-shrink: 0; 
+        }
+
+        .skillfulai__wskai-row1  p{
+            width: 780px;
+            height: 120px;
+            margin-left: auto;
+            flex-shrink: 0;
+            color: #B0ACEB;
+            font-family: Red Hat Display;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-right: 20%;
+            
+           
+        }
+    
+
 
 
 .skillfulai__wskai-feature .skillfulai___features-container__feature {
-    margin: 0;
-
-}
+            margin: 0;
+        
+        }
 
 .skillfulai__wskai-feature .skillfulai___features-container__feature-text {
-    max-width: 700px;
+            max-width: 900px;
+           
+        }
 
-}
+.skillfulai__wskai-row2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        
+            margin: 4rem 0 2rem;
+            margin-left: 4%;
+        }
 
-.skillfulai__wskai-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.skillfulai__wskai-row2 h1{
+    font-family: Red Hat Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px; 
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;/* 112.5% */
+            
+            }
 
-    margin: 4rem 0 2rem;
-}
+.skillfulai__wskai-row2 p {
+                color: #FF8A71;
+                font-size: 16px;
+                font-family: var(--font-family);
+                font-weight: 500;
+                line-height: 30px;
+                cursor: pointer;
+            
+            }
 
-.skillfulai__wskai-heading h1{
-font-size: 34px;
-line-height: 45px;
-font-weight: 800;
-max-width: 510px;
-font-family: var(--font-family);
-
-}
-
-.skillfulai__wskai-heading p {
-    color: #FF8A71;
-    font-size: 16px;
-    font-family: var(--font-family);
-    font-weight: 500;
-    line-height: 30px;
-    cursor: pointer;
-
-}
-
-.skillfulai__wskai-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 2rem;
-
-}
+.skillfulai__wskai-row3 {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin-top: 2rem;
+                margin-left: 2rem;
+            
+            }
 
 
 /* Customizing feature component as per needs */
-.skillfulai__wskai-container .skillfulai__features-container__feature {
+.skillfulai__wskai-row3 .skillfulai__features-container__feature {
     flex: 1;
     margin: 1rem;
     min-width: 210px;
@@ -84,9 +114,57 @@ font-family: var(--font-family);
 }
 
 /* Customizing feature component as per needs */
-.skillfulai__wskai-container .skillfulai__features-container_feature-text {
-    margin-top: 0.5rem;
+.skillfulai__wskai-row3 .skillfulai__features-container_feature-text {
+    margin-top: 1.5rem;
 }
+
+
+
+.skillfulai__wskai-row4 {
+    display: flex;
+    flex-direction: row;
+ 
+    gap: 20rem;
+    align-items: center;
+
+    margin: 4rem 0 2rem;
+    margin-left: 4%;
+
+}
+
+.skillfulai__wskai-row4 button {
+    width: 279px;
+    height: 60px;
+    flex-shrink: 0;
+    border: none; /* Remove any default borders */
+    border-radius: 10px; /* Rounded corners */
+    color: #FFF; /* White text color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: 600; /* Bold text */
+    text-align: center; /* Center the text */
+    line-height: 60px; /* Vertically center the text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+
+.skillfulai__wskai-row4-b1 {
+    background: var(--button-grad-2, linear-gradient(131deg, #6060F2 0%, #B0ACEB 100%));
+    
+}
+
+.skillfulai__wskai-row4-b2 {
+    background: var(--button-grad-4, linear-gradient(131deg, #9D4F9D 0%, #6060F2 100%));
+    
+}
+.skillfulai__wskai-row4-b3 {
+    background: linear-gradient(131deg, #F05F47 0%, #DE3593 100%);
+    border-radius: 5px;
+    
+}
+
 
 @media screen and (max-width: 850px) {
     .skillfulai__wskai-heading {
@@ -119,7 +197,7 @@ font-family: var(--font-family);
 
 @media screen and (max-width: 350px) {
     /* Customizing feature component as per needs */
-    .skillfulai__wskai-container .skillfulai__features-container__feature {
+    .skillfulai__wskai-row3 .skillfulai__features-container__feature {
         margin: 1rem 0;
         min-width: 100%;
     }
