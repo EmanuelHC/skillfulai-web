@@ -8,7 +8,7 @@ import suite1 from '../../assets/suite1.png';
 import suite2 from '../../assets/suite2.png';
 import logo from '../../assets/logo-small.svg';
 import rect_trans from '../../assets/rect_trans.png'
-
+import marketplace from '../../assets/MAKET.png'
 
 const Possibility = () => (
   <div className="skillfulai_possibility section__padding" id="possibility">
@@ -28,17 +28,27 @@ const Possibility = () => (
     <div className="skillfulai__possibility-suite">
       <div className="rectangle-suite">
         <div className="suite-content-container">
-      
           <h1>AI Suite</h1>
-          <p>Our AI Suite is a collection of tools that allow you to create, train, and deploy your own AI models. With our AI Suite, you can create your own AI models without any coding experience. Our AI Suite is designed to be easy to use and intuitive, so you can focus on what matters most: your ideas.</p>
+          <p>Experience the power of personalization with Skillful-AI. Our platform allows you to tailor AI solutions to your unique needs, ensuring a perfect fit for your business or personal use.</p>
           <img src={logo} alt="logo" className="suite-logo-image" />
         </div>
-       <div> Now HERE GOES THE IMAGGES</div>
-       <img src={rect_trans} alt="rect_trans" className="suite-rect-trans"  />
+        <img src={rect_trans} alt="rect_trans" className="suite-rect-trans"  />
         <img src={suite1} alt="skillfulweb" className="suite-image1"  />
         <img src={suite2} alt="suite2" className="suite-image2" />
-
+      </div>  
+    </div>
+    <div className="skillfulai__possibility-marketplace">
+    <div className="rectangle-marketplace">
+        <img src={rect_trans} alt="rect_trans" className="marketplace-rect-trans"  />
+        <img src={marketplace} alt="skillfulweb" className="marketplace-image1"  />
+        <div className="marketplace-content-container">
+          <h1>Marketplace</h1>
+          <p>Experience the power of personalization with Skillful-AI. Our platform allows you to tailor AI solutions to your unique needs, ensuring a perfect fit for your business or personal use.</p>
+          <img src={logo} alt="logo" className="marketplace-logo-image" />
+        </div>
+       
       </div>
+    
     </div>
   </div>
 );
