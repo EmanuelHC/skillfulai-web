@@ -1,37 +1,48 @@
 import React from 'react';
 import Feature from '../../components/feature/Feature';
 import './features.css';
+import Accessibility from '../../assets/Accessibility.png';
+import UserExperience from '../../assets/UE.png';
+import TrustPrivacy from '../../assets/ST.png';
+import Memory from '../../assets/Memory.png';
+import Customization from '../../assets/Customization.png';
 
-const featuresData = [
-  {
-    title: 'AI Customization at Your Fingertips',
-    text: 'Experience the power of personalization with Skillful-AI. Our platform allows you to tailor AI solutions to your unique needs, ensuring a perfect fit for your business or personal use.',
-  },
-  {
-    title: 'Empowering Innovation',
-    text: "With Skillful-AI, you're not just a user, you're an innovator. Our user-friendly tools enable you to create your own AI models, opening up a world of possibilities for innovation and creativity.",
-  },
-  {
-    title: 'Join the AI Marketplace',
-    text: 'Step into the future with the Skillful-AI marketplace. Buy, sell, or trade AI skills and assistants, and take advantage of our NFT technology to truly own your AI as a unique digital asset.',
-  },
-  {
-    title: 'Monetize Your AI Creations',
-    text: 'Turn your AI models into a source of income with Skillful-AI. Our platform allows you to monetize your creations, providing a new avenue for revenue generation in the digital age.',
-  },
-];
+
 
 const Features = () => (
   <div className="skillfulai_features section__padding" id="features">
     <div className="skillfulai_features-heading">
-      <h1 className="gradient__text">Skillful AI offers a comprehensive ecosystem to develop, deploy, own and exchange personalized AI assistants from your computer or smartphone..</h1>
-      <p>Request Early Access to Get Started</p>
+      <h1 >Skillful AI offers a comprehensive ecosystem to develop, deploy, own and exchange personalized AI assistants from your computer or smartphone.</h1>
     </div>
+
     
      <div className="skillfulai_features-container">
-     {featuresData.map((item, index) => (
-        <Feature title={item.title} text={item.text} key={item.title + index} />
-      ))}  
+     <div className="skillfulai_features-container-feature">
+       <img src={Accessibility} alt='Accessibility' className="accessibility-image" /> 
+        <h2 > Accessibility </h2>
+        <p> Skillful AI allows people with any skill level to access powerful tailor-made AI tools that are easy to use. </p>   
+      </div>
+      <div className="skillfulai_features-container-feature">
+       <img src={UserExperience} alt='UserExperience' /> 
+        <h2 > User Experience </h2>
+        <p> Start using and building your custom AI assistant in seconds on an intuitive user interface </p>   
+      </div>
+      <div className="skillfulai_features-container-feature">
+        <img src={TrustPrivacy} alt='TrustPrivacy' /> 
+        <h2 > Trust & Privacy </h2>
+        <p> Get an AI that enables you to own and be in control of your own data. </p>   
+      </div>
+      <div className="skillfulai_features-container-feature">
+        <img src={Memory} alt='Memory' /> 
+        <h2 > Memory </h2>
+        <p> Vector storage of data via parameter-fficient fine-tuning through a unique encoder </p>   
+      </div>
+      <div className="skillfulai_features-container-feature">
+        <img src={Customization} alt='Customization' /> 
+        <h2 > Customization</h2>
+        <p> With the power of BUILDING BLOCKS, customize your AI to fulfil your needs, the way you want them. </p>   
+      </div>
+
     </div>
   </div>
 );

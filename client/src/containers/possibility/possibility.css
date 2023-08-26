@@ -2,59 +2,202 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    gap: 20rem;
+    
 }
 
-.skillfulai__possibility-image {
-    flex: 1;
+
+.skillfulai__possibility-app {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 1rem;
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center;     /* Vertically center the child elements */
+    height: 100%;            /* Take full height of its parent */
 }
 
-.skillfulai__possibility-image img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-}
 
-.skillfulai__possibility-content {
-    flex: 1;
+
+
+
+.rectangle-gradient {
+    width: 1180px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(131deg, #6060F2 0%, #B0ACEB 100%);
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
-}
-
-.skillfulai__possibility-content h4 {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    color: #71E5FF;
-}
-
-.skillfulai__possibility-content h4:last-child {
-    color: #ff8A71;
-}
-
-.skillfulai__possibility-content h1 {
-    font-family: var(--font-family);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2px;
+    margin-top: -30%;
+  }
+  
+  .content-container h2 {
+    width: 600px;
+    height: 83px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 60px;
+    font-style: normal;
     font-weight: 800;
-    font-size: 34px;
-    line-height: 45px;
-    margin: 1rem 0;
+    line-height: 70px;
+    text-transform: capitalize;
+  }
+  
+  .content-container p {
+    width: 526px;
+    height: 117px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+  }
+
+.header-container {
+    display: flex;
+    flex-direction: row; /* Place header and paragraph side by side */
+    gap: 20px; /* Space between header and paragraph */
+}
+  
+  .get-app-button {
+    background: var(--button-grad-4, linear-gradient(131deg, #9D4F9D 0%, #6060F2 100%));
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 279px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-left: -50%;
+  }
+  
+  .get-app-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .skillfulweb-image {
+    width: 90%; /* Adjust this value to make the image bigger */
+    position: absolute;
+    right: 0;
+    bottom: -10%; /* Adjust this value to control the overflow */
+    right: -10%;
+    z-index: 10;
+  }
+  
+  .logo-half-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .skillfulai__possibility-suite {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center;     /* Vertically center the child elements */
+    height: 100%;            /* Take full height of its parent */
 }
 
-.skillfulai__possibility-content p {
-    color: var(--color-text);
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
+  .rectangle-suite {
+    width: 1180px;
+    height: 420px;
+    flex-shrink: 0;
+    background: linear-gradient(132deg, #02012D 0%, #030046 51.04%, #9D4F9D 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 
-    margin-bottom: 2rem;
+  .suite-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: -35%;
+    margin-top: -10%;
+  }
+
+  .suite-content-container h1::before {
+    content: ""; /* This is necessary for the pseudo-element to work */
+    display: block; /* Make it a block element so it takes up its own line */
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    width: 80px;
+    height: 5px;
+    flex-shrink: 0;
+    margin-bottom: 10px; /* Space between the line and the header */
 }
+  .suite-content-container h1 {
+    width: 183.409px;
+    height: 23.855px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 75% */
+    letter-spacing: -1.28px; 
+  }
+  
+
+  .suite-content-container p {
+    max-width: 380px;
+    color: #B0ACEB;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+  }
+
+  .suite-logo-image {
+    position: absolute;
+    left: 5;
+    bottom: 0;
+ }
+
+  .suite-image1 {
+    width: 39%; /* Adjust this value to make the image bigger */
+    position: absolute;
+    right: 0;
+    bottom: 13%; /* Adjust this value to control the overflow */
+    right: 3%;
+    z-index: 1;
+  }
+
+  .suite-rect-trans{
+    width: 41%; /* Adjust this value to make the image bigger */
+    position: absolute;
+    right: 0;
+    bottom: 10%; /* Adjust this value to control the overflow */
+    right: 2%;
+    z-index: 1;
+
+  }
+
+  .suite-image2 {
+    width: 18%; 
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    z-index: 2;
+  }
+  
 
 @media screen and (max-width: 950px) {
     .skillfulai__possibility {

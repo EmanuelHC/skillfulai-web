@@ -2,25 +2,34 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
+    background-image: url('../../assets/back_features.png'); /* Add this line */
+    background-size: cover; /* This will cover the entire viewport */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+    
 }
 
 .skillfulai_features-heading {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
+   
+  
+  
+    font-family: Red Hat Display;
 
     text-align: left;
     margin-right: 5rem;
+    
 }
 
 .skillfulai_features-heading h1 {
-    font-size: 34px;
-    line-height: 45px;
+    font-size: 40px;
+    font-style: normal;
     font-weight: 800;
-    font-family: var(--font-family);
+    line-height: 45px; /* 112.5% */
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    color: transparent; /* Set the text color to transparent */
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .skillfulai_features-heading p {
@@ -36,10 +45,72 @@
 .skillfulai_features-container {
     flex: 1.5;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around; /* Change from flex-start to space-around for even spacing */
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 2rem 0; /* Add some padding on top and bottom */
 }
+
+.skillfulai_features-container-feature {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column;
+    padding: 1rem; /* Add some padding for spacing */
+    border-radius: 10px; /* Rounded corners for hover effect */
+    transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.skillfulai_features-container-feature:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+.skillfulai_features-container-feature img {
+    width: 120px; /* Adjust based on your needs */
+    height: 120px; /* Adjust based on your needs */
+    object-fit: contain;
+     /* Or any other background color that matches your design */
+    border-radius: 10px;
+    padding: 10px; /* Adjust padding to reduce the effective image size */
+    box-sizing: border-box;
+}
+
+
+.skillfulai_features-container-feature h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; /* 133.333% */
+    margin-bottom: 0.5rem; /* Space between title and description */
+}
+
+.skillfulai_features-container-feature p {
+    color: #B0ACEB;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 200px; /* Set a max-width for better readability */
+}
+
+
+.accessibility-image {
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    object-fit: cover;
+    padding: 0; /* Removed the large padding */
+}
+
+
+
 
 @media screen and (max-width: 990px) {
     .skillfulai_features {
