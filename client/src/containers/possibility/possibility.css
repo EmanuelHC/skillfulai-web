@@ -298,6 +298,200 @@
  }
 
 
+ .skillfulai__possibility-creator {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center;     /* Vertically center the child elements */
+    height: 100%;            /* Take full height of its parent */
+}
+
+  .rectangle-creator {
+    width: 1180px;
+    height: 420px;
+    flex-shrink: 0;
+    background: linear-gradient(132deg, #02012D 0%, #030046 51.04%, #9D4F9D 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px; /* Adjust as needed */
+  }
+
+  .creator-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: -50%;
+    margin-top: -13%;
+  }
+
+  .creator-content-container h1::before {
+    content: ""; /* This is necessary for the pseudo-element to work */
+    display: block; /* Make it a block element so it takes up its own line */
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    width: 80px;
+    height: 5px;
+    flex-shrink: 0;
+    margin-bottom: 10px; /* Space between the line and the header */
+}
+  .creator-content-container h1 {
+    width: 183.409px;
+    height: 23.855px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 75% */
+    letter-spacing: -1.28px; 
+  }
+  
+
+  .creator-content-container p {
+    max-width: 380px;
+    color: #B0ACEB;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+  }
+
+  .creator-image1 {
+    width: 39%; /* Adjust this value to make the image bigger */
+    position: absolute;
+   
+    bottom: 13%; /* Adjust this value to control the overflow */
+    right: 3%;
+    z-index: 1;
+    filter: blur(5px); /* Add this line to apply a blur effect */
+}
+
+.creator-image1-text {
+    color: #FFF;
+    position: absolute;
+    font-family: Red Hat Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height:  75% ; /* 75% */
+   
+    left: 70%;
+    z-index: 100;
+    
+
+}
+
+
+.skillfulai__possibility-wallet{
+    display: flex;
+    margin-top: 2%;
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center;     /* Vertically center the child elements */
+    height: 100%;            /* Take full height of its parent */
+
+  }
+
+
+.rectangle-wallet {
+    width: 1180px;
+    height: 420px;
+    flex-shrink: 0;
+    background: linear-gradient(132deg, #8E8FF5 0%, #030046 51.04%, #02012D 100%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px; /* Adjust as needed */
+  }
+
+
+  
+
+  .wallet-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 50%;
+    margin-top: -8%;
+  }
+
+  .wallet-content-container h1::before {
+    content: ""; /* This is necessary for the pseudo-element to work */
+    display: block; /* Make it a block element so it takes up its own line */
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    width: 80px;
+    height: 5px;
+    flex-shrink: 0;
+    margin-bottom: 10px; /* Space between the line and the header */
+}
+  .wallet-content-container h1 {
+    width: 183.409px;
+    height: 23.855px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 75% */
+    letter-spacing: -1.28px; 
+  }
+  
+
+  .wallet-content-container p {
+    max-width: 380px;
+    color: #B0ACEB;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+  }
+
+  .wallet-content-container img {
+    bottom: 2%;
+   right: 3%;
+  }
+
+  .wallet-image1 {
+    width: 45%; /* Adjust this value to make the image bigger */
+    position: absolute;
+    right: 0;
+    bottom: 8%; /* Adjust this value to control the overflow */
+    left: 4%;
+    z-index: 1;
+  }
+
+  .wallet-rect-trans{
+    width: 49%; /* Adjust this value to make the image bigger */
+    position: absolute;
+    right: 0;
+    bottom: 4%; /* Adjust this value to control the overflow */
+    left: 2%;
+    z-index: 1;
+
+  }
+
+  .wallet-logo-image {
+    position: absolute;
+    right: 2;
+    bottom: 0;
+ }
+
+  .wallet-image2 {
+    width: 22%; 
+    position: absolute;
+    left: 35%;
+    bottom: -7%;
+    z-index: 2;
+}
+
 @media screen and (max-width: 950px) {
     .skillfulai__possibility {
         flex-direction: column;
