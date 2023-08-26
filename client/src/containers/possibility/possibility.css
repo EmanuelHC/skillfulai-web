@@ -575,6 +575,110 @@ line-height: 24px; /* 120% */
    
 }
 
+
+.skillfulai__possibility-token {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center;     /* Vertically center the child elements */
+    height: 100%;            /* Take full height of its parent */
+}
+
+  .rectangle-token {
+    width: 1180px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 10.724px;
+    border-radius: 10px;
+    background: linear-gradient(131deg, rgba(96, 96, 242, 0.50) 0%, rgba(157, 79, 157, 0.50) 46.88%, rgba(3, 0, 70, 0.50) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  }
+
+
+  .token-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -55%;
+    margin-top: -13%;
+  }
+
+  .token-content-container h {
+    margin-top: -10%;
+    width: 365px;
+    height: 161.809px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+line-height: normal;
+}
+  
+
+  .token-content-container p {
+    width: 418px;
+    height: 305px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+line-height: 24px; /* 120% */
+  }
+
+  .token-image1 {
+    width: 80%; /* Adjust this value to make the image bigger */
+    position: absolute;
+   
+    bottom: -3%; /* Adjust this value to control the overflow */
+    right: 0%;
+    z-index: 1;
+   
+}
+
+.token-button {
+    width: 180px;
+    height: 60px;
+    flex-shrink: 0;
+    background: var(--button-grad-4, linear-gradient(131deg, #9D4F9D 0%, #6060F2 100%));
+
+    color: #FFF;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    border-radius: 5px; /* Rounded corners on all sides */
+    border: none; /* Remove any default borders */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+    padding: 12px 24px; /* Balanced padding */
+    z-index: 1;
+    position: absolute;
+   
+bottom: 4%; /* Adjust this value to control the overflow */
+right: 3%;
+}
+
+.token-button:hover {
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth on hover */
+}
+
+
 @media screen and (max-width: 950px) {
     .skillfulai__possibility {
         flex-direction: column;

@@ -14,6 +14,7 @@ import creator from '../../assets/creator.svg'
 import Wallet from '../../assets/Wallet.svg'
 import Wallet2 from '../../assets/Wallet2.svg'
 import branded from '../../assets/branded.png'
+import skillful_coin from '../../assets/skillful_coin.png'
 
 const Possibility = () => (
   <div className="skillfulai_possibility section__padding" id="possibility">
@@ -83,10 +84,23 @@ const Possibility = () => (
           <h>Branded AI</h>
           <h1>The possibilities are limitless</h1>
           <p>Experience the power of personalization with Skillful-AI. Our platform allows you to tailor AI solutions to your unique needs, ensuring a perfect fit for your business or personal use.Experience the power of personalization with Skillful-AI. Our platform allows you to tailor AI solutions to your unique needs, ensuring a perfect fit for your business or personal use.</p>
-       
         </div>
-          <img src={branded} alt="branded" className="branded-image1" />
-        
+          <img src={branded} alt="branded" className="branded-image1" />        
+      </div>
+    </div>
+    <div className="skillfulai__possibility-token">
+      <div className="rectangle-token">
+      <div className="token-content-container">
+          <h>Token</h>
+          
+          <p>
+            The Utility powerhouse of the Skillful AI ecosystem.<br />
+            <br />
+            Access AI Creator tools, buy and sell on the marketplace, cover all your fees and subscriptions with $SKAI.
+          </p>
+        </div>
+          <img src={skillful_coin} alt="skillfull_coin" className="token-image1" />  
+          <button className="token-button">BUY TOKEN</button>      
       </div>
     </div>
     

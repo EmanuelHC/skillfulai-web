@@ -19,9 +19,12 @@ const App = () => {
       <div>
       <Features/>
       </div>
+      <div className='possibility'>
+      <Possibility/>
+      
+      </div>
      
   
-      <Possibility/>
       <CTA/>
       <Blog/>
       <Footer/>

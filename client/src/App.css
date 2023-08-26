@@ -40,6 +40,13 @@ a {
 
 }
 
+.possibility {
+  background: var(--darkblue, #030046);
+
+
+
+}
+
 
 .section__padding{
     padding: 4rem 6rem;
