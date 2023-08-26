@@ -13,6 +13,7 @@ import marketplace from '../../assets/MAKET.png'
 import creator from '../../assets/creator.svg'
 import Wallet from '../../assets/Wallet.svg'
 import Wallet2 from '../../assets/Wallet2.svg'
+import branded from '../../assets/branded.png'
 
 const Possibility = () => (
   <div className="skillfulai_possibility section__padding" id="possibility">
@@ -76,6 +77,19 @@ const Possibility = () => (
         </div>
       </div>
     </div>
+    <div className="skillfulai__possibility-branded">
+      <div className="rectangle-branded">
+      <div className="branded-content-container">
+          <h>Branded AI</h>
+          <h1>The possibilities are limitless</h1>
+          <p>Experience the power of personalization with Skillful-AI. Our platform allows you to tailor AI solutions to your unique needs, ensuring a perfect fit for your business or personal use.Experience the power of personalization with Skillful-AI. Our platform allows you to tailor AI solutions to your unique needs, ensuring a perfect fit for your business or personal use.</p>
+       
+        </div>
+          <img src={branded} alt="branded" className="branded-image1" />
+        
+      </div>
+    </div>
+    
     
 
   </div>

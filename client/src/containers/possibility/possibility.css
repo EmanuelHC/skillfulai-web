@@ -492,6 +492,89 @@
     z-index: 2;
 }
 
+
+.skillfulai__possibility-branded {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center; /* Horizontally center the child elements */
+    align-items: center;     /* Vertically center the child elements */
+    height: 100%;            /* Take full height of its parent */
+}
+
+  .rectangle-branded {
+    width: 1180px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 10.724px;
+    background: linear-gradient(131deg, #02012D 0%, #6060F2 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px; /* Adjust as needed */
+  }
+
+
+  .branded-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -50%;
+    margin-top: -13%;
+  }
+
+  .branded-content-container h {
+    margin-top: 25%;
+    width: 365px;
+    height: 161.809px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+line-height: normal;
+}
+  .branded-content-container h1 {
+    width: 434px;
+    height: 118px;
+    flex-shrink: 0;
+    font-family: Red Hat Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px; /* 112.5% */
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+  .branded-content-container p {
+    width: 418px;
+    height: 305px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+line-height: 24px; /* 120% */
+  }
+
+  .branded-image1 {
+    width: 55%; /* Adjust this value to make the image bigger */
+    position: absolute;
+   
+    top: 3%; /* Adjust this value to control the overflow */
+    right: 0%;
+    z-index: 1;
+   
+}
+
 @media screen and (max-width: 950px) {
     .skillfulai__possibility {
         flex-direction: column;
