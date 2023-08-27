@@ -11,12 +11,13 @@
     position: absolute;
     width: 100%; /* Adjust this to scale the image. E.g., 90% will downscale the image to 90% of its original size */
     height: 100%; /* Adjust this to scale the image. E.g., 90% will downscale the image to 90% of its original size */
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%) ; /* Position the image and scale it down to 90% of its original size */
     z-index: 0;; /* Center the image */
     z-index: 0;
     object-fit: cover; /* This will ensure the image covers the container while maintaining its aspect ratio */
+    
 }
 .skillfulai__header-background::after {
     content: "";
@@ -166,7 +167,22 @@ background-clip: text;
 
 }
 
+.skillfulai__header-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
 
+/* Adjusting the gap between images */
+.skillfulai__header-content h1, .skillfulai__header-content p, .skillfulai__header-content button {
+    margin-left: 4rem; /* Adjust this value to increase/decrease the gap */
+}
+
+/* Adjusting the side margins for images */
+.skillfulai__header-image img {
+    /* ... Your existing properties ... */
+    margin-left: 2rem; /* Margin on the left side */
+    margin-right: 2rem; /* Margin on the right side */
+}
 
 @media screen and (max-width: 1050px) {
     .skillfulai__header {
