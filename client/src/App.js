@@ -1,7 +1,7 @@
 import React from 'react'
 //import { Article, Brand, CTA } from './components'; 
 
-import {Footer, Blog, Possibility, Features, WhatSKILLFULAI, Header, TokenTech, UseCases, RoadMap, Founders } from './containers'
+import {Footer, Blog, Possibility, Features, WhatSKILLFULAI, Header, TokenTech, UseCases, RoadMap, Founders, Advisors } from './containers'
 import {CTA, Brand, Navbar} from './components';  
 import './App.css' ;
 
@@ -35,7 +35,9 @@ const App = () => {
       <div className='Founders'>
       <Founders/>
       </div>
-     
+      <div className='Advisors'>
+      <Advisors/>
+      </div>
   
       <CTA/>
       <Blog/>
