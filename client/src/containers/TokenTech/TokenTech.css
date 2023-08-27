@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
 }
 
 .skillfulai_tokenomics {
@@ -17,7 +18,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative; /* Set to relative to position the tokenomics-back2 image */
-    z-index: 0;
+    z-index: 1;
 }
 
 .tokenomics-back2 {
@@ -69,6 +70,22 @@
     margin-left: 5%;
 }
 
+.tokenomics-heading h2 {
+    width: 724px;
+    height: 50px;
+    flex-shrink: 0;
+    font-family: Red Hat Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 5%;
+}
+
 .tokenomics-image1 {
     top: -10%;
     margin-top: -10%;
@@ -77,6 +94,89 @@
     z-index: 2; /* Ensure it's above the tokenomics-back2 image but below the header */
 }
 
+
+.skillfulai_technology {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../assets/token_back_scaled.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Set to relative to position the tokenomics-back2 image */
+    z-index: 2;
+    margin-top: -8%;
+}
+
+
+
+.technology-container {
+    flex: 1.5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 3; /* Ensure it's above the tokenomics-back2 image */
+   
+}
+
+.technology-heading {
+    font-family: Red Hat Display;
+    text-align: left;
+    margin-right: 5rem;
+    position: relative;
+    z-index: 2;
+   
+}
+
+.technology-heading h1 {
+    color: #FFF;
+   
+    background-clip: text;
+    font-family: Red Hat Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 70px;
+    text-transform: capitalize;
+    width: 600px;
+    height: 83px;
+    flex-shrink: 0;
+    
+    position: relative; /* Set to relative so it doesn't push other elements */
+    z-index: 3; /* Ensure it's above the tokenomics-back2 image */
+    margin-left: 5%;
+}
+
+.technology-heading h2 {
+    width: 724px;
+    height: 50px;
+    flex-shrink: 0;
+    font-family: Red Hat Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 5%;
+}
+
+.technology-image1 {
+    margin-left: 5%;
+    right: 0%;
+    position: relative; /* Set to relative to ensure it's not affected by the header's margin */
+    z-index: 2; /* Ensure it's above the tokenomics-back2 image but below the header */
+}
 
 
 @media screen and (max-width: 990px) {
