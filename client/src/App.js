@@ -1,7 +1,7 @@
 import React from 'react'
 //import { Article, Brand, CTA } from './components'; 
 
-import {Footer, Blog, Possibility, Features, WhatSKILLFULAI, Header, TokenTech, UseCases } from './containers'
+import {Footer, Blog, Possibility, Features, WhatSKILLFULAI, Header, TokenTech, UseCases, RoadMap } from './containers'
 import {CTA, Brand, Navbar} from './components';  
 import './App.css' ;
 
@@ -28,6 +28,9 @@ const App = () => {
       </div>
       <div className='UseCases'>
       <UseCases/>
+      </div>
+      <div className='RoadMap'>
+      <RoadMap/>
       </div>
      
   
