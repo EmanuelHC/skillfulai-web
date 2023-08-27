@@ -1,7 +1,7 @@
 import React from 'react'
 //import { Article, Brand, CTA } from './components'; 
 
-import {Footer, Blog, Possibility, Features, WhatSKILLFULAI, Header, TokenTech } from './containers'
+import {Footer, Blog, Possibility, Features, WhatSKILLFULAI, Header, TokenTech, UseCases } from './containers'
 import {CTA, Brand, Navbar} from './components';  
 import './App.css' ;
 
@@ -26,7 +26,9 @@ const App = () => {
       <div className='token'>
       <TokenTech/>
       </div>
-      
+      <div className='UseCases'>
+      <UseCases/>
+      </div>
      
   
       <CTA/>

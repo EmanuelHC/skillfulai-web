@@ -5,3 +5,4 @@ export {default as Header} from './header/Header';
 export {default as Possibility} from './possibility/Possibility';
 export {default as WhatSKILLFULAI} from './whatSKILLFULAI/WhatSKILLFULAI';
 export {default as TokenTech} from './TokenTech/TokenTech';
+export {default as UseCases} from './UseCases/UseCases';
