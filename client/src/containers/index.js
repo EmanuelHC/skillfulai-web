@@ -4,3 +4,4 @@ export {default as Footer} from './footer/Footer';
 export {default as Header} from './header/Header';
 export {default as Possibility} from './possibility/Possibility';
 export {default as WhatSKILLFULAI} from './whatSKILLFULAI/WhatSKILLFULAI';
+export {default as TokenTech} from './TokenTech/TokenTech';
