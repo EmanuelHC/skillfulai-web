@@ -7,6 +7,8 @@ import xIcon from '../../assets/x.png';
 import telegramIcon from '../../assets/telegram.png';
 import linkedinIcon from '../../assets/linkedin.png';
 import discordIcon from '../../assets/discord.png';
+import instagram from '../../assets/instagram.svg';
+import medium from '../../assets/medium.svg';
 
 const Partners = () => {
   
@@ -29,6 +31,7 @@ const Partners = () => {
   const redirectToWhitelistForm = () => {
     window.open('https://docs.google.com/forms/d/1Vks6Xlkcxw89keWjrOJiSylOY97Ii8LcsSTynb0lyjY/viewform?edit_requested=true', '_blank');
   };
+  
 
   return (
     <div className="skillfulai-partners">
@@ -47,6 +50,8 @@ const Partners = () => {
           <img src={linkedinIcon} alt="LinkedIn" onClick={redirectToLinkedIn} />
           <img src={discordIcon} alt="Discord" onClick={redirectToDiscord} />
           <img src={xIcon} alt="X Icon" onClick={handleXIconClick} />
+          <img src={instagram} alt="X Icon" onClick={handleXIconClick} />
+          <img src={medium} alt="X Icon" onClick={handleXIconClick} />
       </div>
     </div>
   );
