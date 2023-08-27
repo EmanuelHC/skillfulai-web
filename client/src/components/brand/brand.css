@@ -1,26 +1,40 @@
 .skilfullai__brand {
-    display: flex;
-    flex-wrap: nowrap; /* Prevents the items from wrapping onto the next line */
-    justify-content: space-between; /* Distributes the items evenly along the horizontal line with equal space around them */
-    align-items: center; /* Aligns items vertically in the center */
-    flex-direction: column;
-    height: 5%; 
-}
-
-
-.skilfullai__brand-row1 {
-    gap: 10rem; /* Creates a gap between the images */
-    margin-top: -4%;
-    margin-left: 12%;
+    position: relative;
+    overflow: hidden;
+    height: 100px; /* Adjust based on your image height */
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 1 2rem; /* Add padding to the left and right */
+    margin-top: -1%;
+    margin-left: 5%;
+}
+
+.skilfullai__brand-row {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slideInOut 10s infinite;
+    width: calc(100% - 4rem); /* Adjust width considering the padding */
+}
+
+.skilfullai__brand-row img {
+    margin: 0 0.3rem; /* Reduce the space between images */
 }
 
 .skilfullai__brand-row2 {
-    gap: 10rem; /* Creates a gap between the images */
-   
-    margin-left: 8%;
-    display: flex;
-    justify-content: center;
+    animation-delay: 5s; /* Delay the second row by 5 seconds */
 }
 
+@keyframes slideInOut {
+    0%, 50%, 100% {
+        left: 100%;
+        opacity: 0;
+    }
+    10%, 40% {
+        left: 0;
+        opacity: 1;
+    }
+}
