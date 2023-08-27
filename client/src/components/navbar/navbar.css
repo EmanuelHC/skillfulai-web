@@ -26,6 +26,11 @@
     margin-left: 7%;
     margin-top: 3%;
 }
+.skillfulai__navbar-brand_container:hover {
+    transform: scale(1.05); /* Slightly scale the brand container */
+    opacity: 0.9; /* Reduce the opacity a bit */
+    transition: all 0.3s ease; /* Smooth transition */
+}
 
 .space-after {
     margin-right: 1rem;
@@ -38,6 +43,13 @@
     margin-right: 7%; /* Same margin as the logo for symmetry */
     gap: 2rem;
 }
+
+.skillfulai__navbar-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white overlay */
+    transform: scale(1.05); /* Slightly scale the button */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
 
 .skillfulai__navbar-buy button,
 .skillfulai__navbar-app button,
@@ -61,6 +73,23 @@
 
 .skillfulai__navbar-app button {
     background: linear-gradient(131deg, #6060F2 0%, #B0ACEB 100%);
+    position: relative;
+}
+
+.skillfulai__navbar-app button:hover::before {
+    content: "Coming Soon";
+    position: absolute;
+    background-color: #333; /* You can adjust the color */
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 100%; /* Display above the button */
+    left: 50%;
+    transform: translateX(-50%); /* Center the tooltip */
+    white-space: nowrap; /* Prevent wrapping of text */
+    font-size: 14px;
+    margin-bottom: 5px; /* Some space between the tooltip and the button */
+    z-index: 10; /* Ensure the tooltip is above other elements */
 }
 
 .skillfulai__navbar-sign button {

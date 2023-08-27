@@ -27,6 +27,10 @@ const Menu = () => (
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] =useState(false);
+  const redirectToWhitelistForm = () => {
+    window.open('https://docs.google.com/forms/d/1Vks6Xlkcxw89keWjrOJiSylOY97Ii8LcsSTynb0lyjY/viewform?edit_requested=true', '_blank');
+  };
+
   return (
     <div>
       < div className='skillfulai__navbar'>
@@ -47,13 +51,13 @@ const Navbar = () => {
 
           <div className='skillfulai__navbar-buttons'>
             <div className='skillfulai__navbar-buy'>
-              <button> Buy Token</button>
+              <button onClick={redirectToWhitelistForm} > Buy Token</button>
             </div>
             <div className='skillfulai__navbar-app'>
               <button type="button"> Launch APP </button>
             </div>
             <div className='skillfulai__navbar-sign'>
-              <button type="button"> Sign Up </button>
+              <button type="button" onClick={redirectToWhitelistForm} > Sign Up </button>
             </div>
           </div>
 

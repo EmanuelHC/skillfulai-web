@@ -41,10 +41,7 @@ const App = () => {
       <div className='Partners'>
       <Partners/>
       </div>
-      <div className='CTA'>
-      <CTA/>
-      </div>
-      
+ 
       <Blog/>
       <Footer/>
 
