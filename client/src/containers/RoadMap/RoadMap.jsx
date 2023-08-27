@@ -8,8 +8,8 @@ const RoadMap = () => (
     <div className="skillfulai_roadmap-content section__padding" id="roadmap">
         <div className="roadmap-container">
           <div className="roadmap-heading">
-            
-            <img src={roadmap} alt="usecases" className="roadmap-image1" />      
+          
+            <img src={roadmap} alt="roadmap" className="roadmap-image1" />      
         </div>
         </div>
       </div>

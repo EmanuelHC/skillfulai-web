@@ -7,3 +7,4 @@ export {default as WhatSKILLFULAI} from './whatSKILLFULAI/WhatSKILLFULAI';
 export {default as TokenTech} from './TokenTech/TokenTech';
 export {default as UseCases} from './UseCases/UseCases';
 export {default as RoadMap} from './RoadMap/RoadMap';
+export {default as Founders} from './Founders/Founders';

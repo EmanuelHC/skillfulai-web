@@ -1,0 +1,62 @@
+.skillfulai-founders {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--darkblue, #030046);
+}
+
+.skillfulai_founders-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../assets/founders_back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Set to relative to allow absolute positioning of child elements */
+    z-index: 1;
+}
+
+.founders-image1 {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin-top: -4%;
+}
+
+.founders-heading {
+    text-align: left;
+    margin-right: 5rem;
+    position: absolute; /* Set to absolute to overlap the image */
+    top: 8%; /* Adjust this value to move the h1 up or down */
+    left: 10%; /* Adjust this value to move the h1 left or right */
+    z-index: 3;
+    font-family: Red Hat Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 990px) {
+    .skillfulai_founders {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .skillfulai_features-heading h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
