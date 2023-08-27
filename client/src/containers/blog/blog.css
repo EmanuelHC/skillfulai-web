@@ -1,6 +1,7 @@
 .skillfulai__blog {
     display: flex;
     flex-direction: column;    
+    background: var(--darkblue, #030046);
 }
 
 .skillfulai__blog-heading {

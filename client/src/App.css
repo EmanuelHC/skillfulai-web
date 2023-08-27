@@ -55,7 +55,10 @@ a {
 
 }
 
-
+.CTA {
+  background: var(--darkblue, #030046);
+  z-index: -10;
+}
 
 
 .section__padding{

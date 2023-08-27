@@ -9,3 +9,4 @@ export {default as UseCases} from './UseCases/UseCases';
 export {default as RoadMap} from './RoadMap/RoadMap';
 export {default as Founders} from './Founders/Founders';
 export {default as Advisors} from './Advisors/Advisors';
+export {default as Partners} from './Partners/Partners';

@@ -1,0 +1,160 @@
+/* Partners.css */
+
+.skillfulai-partners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    position: relative;
+    background: var(--darkblue, #030046);
+}
+
+.skillfulai_partners-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    background-image: url('../../assets/partners_back.png');
+    background-position: center -20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Row 1: Centered partners image */
+.partners-image1 {
+    width: 60%; 
+    margin: 2rem 0;
+}
+
+/* Row 2: Image on the left, title on the right, and text below */
+.partners-image2 {
+    width: 40%; 
+    margin: 0 auto;
+    margin-left: 5%;
+}
+
+.partners-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+.partners-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Adjust for margins on the side */
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-top: -10%;
+}
+
+.partners-title h1 {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    width: 604px;
+    height: 212px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.partners-title p {
+    width: 580px;
+    height: 158.698px;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: #B0ACEB;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Row 3: Connect header and button */
+.partners-title2 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.partners-title2::after {
+    content: "";
+    display: block;
+    width: 1380px;
+    height: 1px;
+    background-color: #8E8FF5;
+    position: absolute;
+    left: 50%;
+    margin-top: 1%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.partners-button {
+    width: 180px;
+    height: 60px;
+    flex-shrink: 0;
+    background: var(--button-grad-1, linear-gradient(131deg, #F05F47 0%, #DE3593 100%));
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position : absolute;
+    right: 8%;
+    bottom: 15%;
+    
+}
+
+.icons {
+    display: flex;
+    justify-content: center; /* Horizontally center the icons */
+    align-items: center;     /* Vertically center the icons */
+    flex-wrap: wrap;         /* Allow icons to wrap to the next line if there's not enough space */
+    gap: 40px;               /* Space between each icon */
+    margin-top: 2%;
+}
+.icons img {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .icons img:hover {
+    transform: translateY(-5px) scale(1.1);
+    opacity: 0.8;
+  }
+  
+
+
+/* Media queries for responsiveness (optional) */
+@media screen and (max-width: 768px) {
+    .partners-image1, .partners-image2 {
+        width: 80%;
+    }
+
+    .partners-title, .partners-text {
+        width: 80%;
+    }
+}
