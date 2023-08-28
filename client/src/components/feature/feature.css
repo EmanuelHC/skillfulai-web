@@ -34,6 +34,7 @@
     background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 0.25rem;
+    margin-bottom: 12%;
 
 }
 

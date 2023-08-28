@@ -7,7 +7,7 @@
     background-size: cover; /* This will cover the entire viewport */
     background-repeat: no-repeat; /* This will prevent the image from repeating */
     background-position: center; /* This will center the image */
-    
+    z-index: 2;
 }
 
 .skillfulai_features-heading {
@@ -18,7 +18,8 @@
 
     text-align: left;
     margin-right: 5rem;
-    
+
+
 }
 
 .skillfulai_features-heading h1 {

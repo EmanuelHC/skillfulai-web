@@ -16,7 +16,7 @@ const App = () => {
       <div  className='wskai'>
       <WhatSKILLFULAI/>
       </div>
-      <div>
+      <div className='features'>
       <Features/>
       </div>
       <div className='possibility'>
@@ -41,7 +41,10 @@ const App = () => {
       <div className='Partners'>
       <Partners/>
       </div>
- 
+      <div className='CTA'>
+      <CTA/>
+      </div>
+      
       <Blog/>
       <Footer/>
 

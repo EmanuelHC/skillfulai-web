@@ -15,7 +15,7 @@ const Header = () => {
 
       <div className="skillfulai__header-content">
         <h1 className="header_gradient__text">Let&apos;s Build Something amazing with Skillful-AI</h1>
-        <p>Unlock the future with AI that understands, adapts, and evolves. Dive into a world where innovation meets intuition. Your journey to brilliance begins here with Skillful-AI.</p>
+        <p>Stay ahead of the evolving technological landscape with Skillful AI's groundbreaking personalized AI Ecosystem. <br></br>  <br></br> Witness the transition from basic chatbots to advanced virtual assistants and tailor-made AI solutions. As the tech arena races forward, Skillful AI emerges as your gateway to harnessing the benefits of this revolution. </p>
         <button type="submit" onClick={redirectToWhitelistForm} >WHITELIST ME </button>
       </div>
 
