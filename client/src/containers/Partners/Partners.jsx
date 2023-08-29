@@ -24,6 +24,15 @@ const Partners = () => {
     window.open('https://www.linkedin.com/company/skillful-ai-io/about/', '_blank');
   };
 
+  const redirectToIG = () => {
+    window.open('https://www.instagram.com/skillfulai.io/', '_blank');
+  };
+
+  const redirectToMedium = () => {
+    window.open('https://skillfulai.medium.com/subscribe', '_blank');
+  };
+
+
   const handleXIconClick = () => {
     window.open('https://twitter.com/SkillfulAI', '_blank');
   };
@@ -40,7 +49,7 @@ const Partners = () => {
           <img src={partners2} alt="partners" className="partners-image2" />
           <div className="partners-title">
             <h1>Seize the moment! Dive into the world of skillful AI now and uncover its limitless possibilities.</h1>
-            <p className="partners-title">It's time to become a part of this transformative journey, where AI transcends its boundaries and becomes a versatile tool in your hands.Embrace the evolution, and together, let's redefine what's achievable in the realm of AI..</p>
+            <p className="partners-title">It's time to become a part of this transformative journey, where AI transcends its boundaries and becomes a versatile tool in your hands. Embrace the evolution, and together, let's redefine what's achievable in the realm of AI..</p>
           </div>
       </div>
       <button className="partners-button" onClick={redirectToWhitelistForm}>Join Whitelist</button>
@@ -50,8 +59,8 @@ const Partners = () => {
           <img src={linkedinIcon} alt="LinkedIn" onClick={redirectToLinkedIn} />
           <img src={discordIcon} alt="Discord" onClick={redirectToDiscord} />
           <img src={xIcon} alt="X Icon" onClick={handleXIconClick} />
-          <img src={instagram} alt="X Icon" onClick={handleXIconClick} />
-          <img src={medium} alt="X Icon" onClick={handleXIconClick} />
+          <img src={instagram} alt="X Icon" onClick={redirectToIG} />
+          <img src={medium} alt="X Icon" onClick={redirectToMedium} />
       </div>
     </div>
   );

@@ -60,6 +60,9 @@ a {
 
 }
 
+.Partners {
+  margin-top: 0%;
+}
 .CTA {
   background: var(--darkblue, #030046);
   z-index: -10;

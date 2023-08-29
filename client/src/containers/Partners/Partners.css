@@ -9,6 +9,7 @@
     background-size: cover;
     position: relative;
     background: var(--darkblue, #030046);
+    
 }
 
 .skillfulai_partners-content {
@@ -80,6 +81,7 @@
     color: #B0ACEB;
     text-align: center;
     margin-top: 1rem;
+    text-align: left;
 }
 
 /* Row 3: Connect header and button */
@@ -124,6 +126,13 @@
     position : absolute;
     right: 8%;
     bottom: 15%;
+    border-radius: 5px; /* Rounded corners on all sides */
+    border: none; /* Remove any default borders */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+    padding: 12px 24px; /* Balanced padding */
+
+    
     
 }
 

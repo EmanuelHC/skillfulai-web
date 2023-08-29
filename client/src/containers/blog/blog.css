@@ -11,6 +11,18 @@
     margin-bottom: 5rem;
 }
 
+.gradient__text-blog {
+    font-family: Red Hat Display;
+font-size: 60px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+background: var(--corporategradient, linear-gradient(131deg, #FBB315 0%, #F05F47 25%, #DE3593 72.98%, #9D4F9D 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 .skillfulai__blog-heading h1 {
     font-size: 62px;
     line-height: 75px;
