@@ -52,7 +52,7 @@ a {
 
 }
 
-.token {
+.TokenTech {
   margin-top: -6%;
   background: var(--darkblue, #030046);
   z-index: -10;
@@ -118,26 +118,43 @@ a {
     }
   }
   
-  @media screen and (max-width: 700px){
-    .section__padding{
-        padding: 4rem ;
-    
+  @media only screen and (max-width: 768px) {
+    .section__padding {
+        padding: 3rem 4rem;
     }
-    
-    .section__margin{
-        margin: 4rem ;
-    }
-    
-  }
 
-  @media screen and (max-width: 550px){
-    .section__padding{
-        padding: 4rem 2rem ;
-    
+    .section__margin {
+        margin: 3rem 4rem;
     }
-    
-    .section__margin{
-        margin: 4rem 2rem ;
+
+    .features, .Partners {
+        margin-top: 2%;
     }
-    
-  }
+
+    .TokenTech {
+        margin-top: -4%;
+    }
+
+    /* Add other responsive styles for tablets as needed */
+}
+
+/* Media query for mobile screens (up to 550px) */
+@media only screen and (max-width: 550px) {
+    .section__padding {
+        padding: 2rem 1.5rem;
+    }
+
+    .section__margin {
+        margin: 2rem 1.5rem;
+    }
+
+    .features, .Partners {
+        margin-top: 5%;
+    }
+
+    .TokenTech {
+        margin-top: -2%;
+    }
+
+    /* Add other responsive styles for mobiles as needed */
+}

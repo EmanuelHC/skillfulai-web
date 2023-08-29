@@ -23,7 +23,7 @@ const App = () => {
       <Possibility/>
       
       </div>
-      <div className='token'>
+      <div className='TokenTech'>
       <TokenTech/>
       </div>
       <div className='UseCases'>
