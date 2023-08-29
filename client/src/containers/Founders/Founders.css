@@ -27,14 +27,27 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
-    margin-top: -4%;
+    margin-top: 2%;
+}
+
+.founders_skillful-ai {
+    flex-direction: row;
+    justify-content: space-evenly; 
+    left: 5%; /* Start 5% from the left edge */
+    right: 5%; /* End 5% from the right edge */
+    gap: 0.5%; /* Adjust the space between SVG letters */
+    z-index: 1; /* Ensure it appears below the "Coming soon" text */
+    
+
+
+
 }
 
 .founders-heading {
     text-align: left;
     margin-right: 5rem;
     position: absolute; /* Set to absolute to overlap the image */
-    top: 8%; /* Adjust this value to move the h1 up or down */
+    top: 12%; /* Adjust this value to move the h1 up or down */
     left: 10%; /* Adjust this value to move the h1 left or right */
     z-index: 3;
     font-family: Red Hat Display;
@@ -46,6 +59,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    z-index: 300;
 }
 
 @media screen and (max-width: 990px) {
