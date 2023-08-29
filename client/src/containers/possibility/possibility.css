@@ -962,6 +962,14 @@ right: 3%;
 .marketplace-logo-image {
     right: 1%;
 }
+.creator-content-container {
+  display: flex;
+
+  align-items: center;
+  position: relative;
+  gap: 2px;
+  height: 300px;
+}
 .creator-content-container h1 {
   font-size: 26px;
   line-height: 30px;
@@ -969,22 +977,25 @@ right: 3%;
 }
 
 .creator-content-container p {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 22px;
   text-align: center;
+  margin-top: 12%;
 }
 
 .creator-image1 {
-  width: 60%;
-  bottom: 10%;
-  right: 20%;
+  width: 40%;
+  bottom: 0%;
+  right: 0%;
 }
 
 .creator-image1-text {
-  left: 50%;
-  transform: translateX(-50%);
+  
+  bottom: 15%;
+  right: 0%;
   text-align: center;
-  font-size: 24px;
+  font-size: 14px;
+  position: absolute;
 }
 .wallet-content-container{
   display: flex;
