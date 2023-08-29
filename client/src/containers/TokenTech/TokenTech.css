@@ -93,6 +93,7 @@
     right: 0%;
     position: relative; /* Set to relative to ensure it's not affected by the header's margin */
     z-index: 2; /* Ensure it's above the tokenomics-back2 image but below the header */
+  
 }
 
 

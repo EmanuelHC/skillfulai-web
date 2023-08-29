@@ -2,6 +2,7 @@ import React from 'react';
 import './TokenTech.css';
 import tokenomics from '../../assets/tokenomics.png';
 import tokenomics2 from '../../assets/tokenomics2.png';
+import tokenomics_reloaded from '../../assets/tokenomics2_reload.png';
 import tokenomics_back2 from '../../assets/tokenomics-back2.png';
 import technology from '../../assets/technology.png';
 
@@ -12,8 +13,8 @@ const TokenTech = () => (
       <img src={tokenomics_back2} alt="tokenomics" className="tokenomics-back2" />      
         <div className="tokenomics-container">
           <div className="tokenomics-heading">
-            <h1 >Tokenomics</h1>
-            <img src={tokenomics2} alt="tokenomics" className="tokenomics-image1" />      
+            <h1 ></h1>
+            <img src={tokenomics_reloaded} alt="tokenomics" className="tokenomics-image1" />      
         </div>
         </div>
       </div>

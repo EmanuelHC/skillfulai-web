@@ -16,7 +16,13 @@ import Wallet2 from '../../assets/Wallet2.svg'
 import branded from '../../assets/branded.png'
 import skillful_coin from '../../assets/skillful_coin.png'
 
-const Possibility = () => (
+const Possibility = () => {
+  const redirectToWhitelistForm = () => {
+    window.open('https://docs.google.com/forms/d/1Vks6Xlkcxw89keWjrOJiSylOY97Ii8LcsSTynb0lyjY/viewform?edit_requested=true', '_blank');
+  };
+
+
+return (
   <div className="skillfulai_possibility section__padding" id="possibility">
     <div className="skillfulai__possibility-app">
         <div className="rectangle-gradient">
@@ -25,7 +31,7 @@ const Possibility = () => (
             <p>The Future is Now Unleash your creativity with Skillful AI. Personalize, innovate and revolutionize the way you interact with technology. With Skillful AI, you're not just adapting to the future, you're creating it.</p>
            
           </div>
-          <button className="get-app-button">GET YOUR APP NOW</button>
+          <button className="get-app-button" onClick={redirectToWhitelistForm}>JOIN WHITELIST</button>
 
           <img src={skillfulweb} alt="skillfulweb" className="skillfulweb-image" />
           <img src={logo_half} alt="logo_half" className="logo-half-image" />
@@ -100,7 +106,7 @@ const Possibility = () => (
           </p>
         </div>
           <img src={skillful_coin} alt="skillfull_coin" className="token-image1" />  
-          <button className="token-button">BUY TOKEN</button>      
+          <button className="token-button" onClick={redirectToWhitelistForm}>BUY TOKEN</button>      
       </div>
     </div>
     
@@ -108,5 +114,6 @@ const Possibility = () => (
 
   </div>
 );
+};
 
 export default Possibility;

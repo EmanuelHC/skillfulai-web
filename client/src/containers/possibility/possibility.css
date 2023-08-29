@@ -61,7 +61,7 @@
     font-family: Red Hat Display;
     font-size: 20px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     line-height: 24px;
   }
 
@@ -324,7 +324,7 @@
     flex-direction: column;
     gap: 50px;
     margin-left: -50%;
-    margin-top: -13%;
+    margin-top: -10%;
   }
 
   .creator-content-container h1::before {
@@ -335,6 +335,7 @@
     height: 5px;
     flex-shrink: 0;
     margin-bottom: 10px; /* Space between the line and the header */
+    margin-top: 5%;
 }
   .creator-content-container h1 {
     width: 183.409px;
@@ -582,6 +583,8 @@ line-height: 24px; /* 120% */
     justify-content: center; /* Horizontally center the child elements */
     align-items: center;     /* Vertically center the child elements */
     height: 100%;            /* Take full height of its parent */
+    
+ 
 }
 
   .rectangle-token {
@@ -598,6 +601,11 @@ line-height: 24px; /* 120% */
     align-items: center;
     position: relative;
     z-index: 1;
+    background-image: url('../../assets/token_back.png');
+    background-size: cover; /* This will cover the entire viewport */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+    z-index: 2;
 
   }
 
