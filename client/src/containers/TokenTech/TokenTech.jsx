@@ -17,7 +17,7 @@ const TokenTech = () => {
         <img src={tokenomics_back2} alt="tokenomics" className="tokenomics-back2" />      
           <div className="tokenomics-container">
             <div className="tokenomics-heading">
-              <h1 ></h1>
+            
               <img src={tokenomics_reloaded} alt="tokenomics" className="tokenomics-image1" />      
           </div>
           </div>
@@ -28,6 +28,7 @@ const TokenTech = () => {
             <div className="technology-heading">
               <h1 >Technology</h1>
               <h2 >The next generation of AI creator tools</h2>
+            
               <img src={technology} alt="technology" className="technology-image1" />      
               <button className="skillfulai__tech-button" type="submit" onClick={redirectToWhitelistForm} >Learn More </button>
           </div>

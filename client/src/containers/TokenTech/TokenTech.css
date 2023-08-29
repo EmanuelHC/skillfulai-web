@@ -41,6 +41,7 @@
     width: 100%;
     max-width: 1200px;
     z-index: 3; /* Ensure it's above the tokenomics-back2 image */
+    margin-top: 4%;
 }
 
 .tokenomics-heading {
@@ -293,15 +294,17 @@
         font-size: 35px;
         line-height: 42px;
         width: 100vw;
-        margin-left: 0;
+        margin-left: 1.5rem;
     }
 
     .tokenomics-heading h2, .technology-heading h2 {
         font-size: 26px;
         line-height: 30px;
         width: 100vw;
-        margin-left: 0;
-        z-index: 10;
+        margin-left: 1.5rem;
+        z-index: 100;
+        height: 100px;
+        
     }
 
     .skillfulai__tech-button {
