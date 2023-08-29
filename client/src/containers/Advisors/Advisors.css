@@ -72,21 +72,74 @@
 
 
 @media screen and (max-width: 990px) {
-    .skillfulai_features {
-        flex-direction: column;
+    
+    .skillfulai_Advisors {
+        margin-top: -4%;
     }
 
-    .skillfulai_features-heading {
-        margin: 0 0 2rem 0;
+    .Advisors-heading {
+        font-size: 32px;
+        line-height: 36px;
+        margin-right: 3rem;
     }
+
+    .Advisors-heading h1 {
+        font-size: 50px;
+        line-height: 58px;
+        width: 500px;
+        height: 70px;
+        margin-left: 3%;
+        margin-top: 40px;
+    }
+    .Advisors-image1 {
+        width: 90vw;  /* Adjust the width for tablet */
+        left: 0;
+    }
+
 }
 
+@media screen and (max-width: 700px) {
+    
+    .skillfulai_Advisors {
+        margin-top: -3%;
+    }
 
+    .Advisors-heading {
+        font-size: 28px;
+        line-height: 32px;
+        margin-right: 2rem;
+    }
 
+    .Advisors-heading h1 {
+        font-size: 42px;
+        line-height: 48px;
+        width: 400px;
+        height: 60px;
+        margin-left: 2%;
+        margin-top: 35px;
+    }
+
+}
 
 @media screen and (max-width: 550px) {
-    .skillfulai_features-heading h1 {
-        font-size: 28px;
-        line-height: 38px;
+    
+    .skillfulai_Advisors {
+        margin-top: -2%;
     }
+
+    .Advisors-heading {
+        font-size: 24px;
+        line-height: 28px;
+        margin-right: 1.5rem;
+    }
+
+    .Advisors-heading h1 {
+        font-size: 36px;
+        line-height: 42px;
+       
+        height: 53px;
+        margin-left: 1%;
+        margin-top: 30px;
+    }
+
 }

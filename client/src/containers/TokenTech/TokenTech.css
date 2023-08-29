@@ -220,21 +220,73 @@
 }
 
 @media screen and (max-width: 990px) {
-    .skillfulai_features {
-        flex-direction: column;
+
+    .tokenomics-heading h1, .technology-heading h1 {
+        font-size: 50px;
+        line-height: 60px;
+        width: 80%; /* Adjust for narrower screens */
+        margin-left: 2.5%;
     }
 
-    .skillfulai_features-heading {
-        margin: 0 0 2rem 0;
+    .tokenomics-heading h2, .technology-heading h2 {
+        font-size: 30px;
+        line-height: 34px; /* Adjust the line-height proportionally */
+        width: 80%; /* Adjust for narrower screens */
+        margin-left: 2.5%;
+    }
+
+    .tokenomics-image1, .technology-image1 {
+        margin-top: 0;
+    }
+
+    .skillfulai__tech-button {
+        margin-top: 2rem;
+        margin-left: 2.5rem;
     }
 }
 
 
+@media screen and (max-width: 700px) {
+
+    .tokenomics-heading h1, .technology-heading h1 {
+        font-size: 40px;
+        line-height: 48px;
+        width: 90%;
+        margin-left: 1.5%;
+    }
+
+    .tokenomics-heading h2, .technology-heading h2 {
+        font-size: 28px;
+        line-height: 32px;
+        width: 90%;
+        margin-left: 1.5%;
+    }
+
+    .skillfulai__tech-button {
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+    }
+}
 
 
 @media screen and (max-width: 550px) {
-    .skillfulai_features-heading h1 {
-        font-size: 28px;
-        line-height: 38px;
+
+    .tokenomics-heading h1, .technology-heading h1 {
+        font-size: 35px;
+        line-height: 42px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tokenomics-heading h2, .technology-heading h2 {
+        font-size: 26px;
+        line-height: 30px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .skillfulai__tech-button {
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
 }

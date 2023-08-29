@@ -113,22 +113,82 @@
 
 
 
-@media screen and (max-width: 990px) {
+@media only screen and (max-width: 992px) {
     .skillfulai_features {
-        flex-direction: column;
+        padding: 1rem; /* Adjust padding for smaller screens */
     }
 
-    .skillfulai_features-heading {
-        margin: 0 0 2rem 0;
+    .skillfulai_features-heading h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .skillfulai_features-heading p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .skillfulai_features-container-feature {
+        padding: 0.5rem;
+    }
+
+    .skillfulai_features-container-feature img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skillfulai_features-container-feature h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .accessibility-image {
+        width: 250px;
+        height: 250px;
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .skillfulai_features {
+        padding: 0.5rem;
+    }
 
+    .skillfulai_features-heading {
+        text-align: center;
+        margin-right: 0;
+    }
 
-
-@media screen and (max-width: 550px) {
     .skillfulai_features-heading h1 {
         font-size: 28px;
-        line-height: 38px;
+        line-height: 34px;
+    }
+
+    .skillfulai_features-heading p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .skillfulai_features-container {
+        justify-content: center; /* Centers the features on smaller screens */
+    }
+
+    .skillfulai_features-container-feature {
+        margin-bottom: 2rem; /* Adds space between wrapped items */
+        flex: 0 1 calc(50% - 1rem); /* Makes sure two items fit in a row with some spacing */
+    }
+
+    .skillfulai_features-container-feature img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skillfulai_features-container-feature h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .accessibility-image {
+        width: 200px;
+        height: 200px;
     }
 }

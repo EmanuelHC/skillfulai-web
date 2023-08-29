@@ -139,32 +139,72 @@
 
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1200px) {
+    .skillfulai__navbar-links::after {
+        width: 1000px; /* Reduced width of the line to fit better */
+    }
+    .skillfulai__navbar-links {
+        width: 800px; /* Adjusted to align with the modified line width */
+    }
+    .skillfulai__navbar-buttons {
+        gap: 1.2rem; /* Reduce the gap between buttons for better fit */
+    }
+}
+
+/* For tablets or smaller desktops */
+@media screen and (max-width: 992px) {
+    .skillfulai__navbar-links {
+        flex-direction: column; /* Stack the links */
+        width: auto; /* Reset to auto for better alignment */
+        align-items: flex-start; /* Align to the start */
+    }
     .skillfulai__navbar-links_container {
-        display: none;
+        flex-direction: column; /* Stack the link containers */
+        align-items: flex-start; /* Align to the start */
     }
-    .skillfulai__navbar-menu {
-        display: flex;
+    .skillfulai__navbar-links_container p {
+        margin: 0.5rem 0; /* Adjust margins for vertical alignment */
+    }
+    .skillfulai__navbar-links::after {
+        display: none; /* Remove the line as it might not align well with vertically stacked links */
+    }
+    .skillfulai__navbar-brand_container {
+        margin-top: 1.5%; /* Adjust margin to center better */
     }
 }
 
-@media screen and (max-width: 700px) {
-    .skillfulai__navbar {
-        padding: 2rem 4rem;
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .skillfulai__navbar-top {
+        flex-direction: column; /* Stack elements */
+        align-items: flex-start; /* Align to the start */
+        padding: 1rem; /* Add some padding for breathing space */
+    }
+    .skillfulai__navbar-brand_container {
+        margin-left: 3%; /* Reduce left margin */
+        margin-top: 1rem; /* Adjust top margin */
+    }
+    .skillfulai__navbar-buttons {
+        margin-right: 3%; /* Reduce right margin */
+        gap: 1rem; /* Reduce gap */
+    }
+    .skillfulai__navbar-buttons button {
+        font-size: 16px; /* Slightly reduce font size for better fit */
+        padding: 0.4rem 0.8rem; /* Adjust padding */
     }
 }
 
-@media screen and (max-width: 550px) {
-    .skillfulai__navbar {
-        padding: 2rem;
+/* For very small mobile devices */
+@media screen and (max-width: 576px) {
+    .skillfulai__navbar-brand_container {
+        margin-left: 2%; /* Further reduce left margin */
     }
-    .skillfulai__navbar-sign {
-        display: none;
+    .skillfulai__navbar-buttons {
+        margin-right: 2%; /* Further reduce right margin */
+        gap: 0.5rem; /* Further reduce gap */
     }
-    .skillfulai__navbar-menu_container {
-        top: 20px;
-    }
-    .skillfulai__navbar-menu-container-links-sign {
-        display: block;
+    .skillfulai__navbar-buttons button {
+        font-size: 14px; /* Further reduce font size */
+        padding: 0.3rem 0.6rem; /* Adjust padding */
     }
 }

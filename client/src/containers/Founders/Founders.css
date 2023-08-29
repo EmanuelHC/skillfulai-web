@@ -63,14 +63,62 @@
 }
 
 @media screen and (max-width: 990px) {
-    .skillfulai_founders {
-        flex-direction: column;
+
+    .founders-heading {
+        font-size: 30px;
+        line-height: 34px;
+        margin-right: 3rem;
+        top: 10%;
+        left: 8%;
+    }
+
+    .founders-image1 {
+        width: 100vw;
+        margin-top: 1.5%;
+    }
+
+    .founders_skillful-ai {
+        gap: 0.3%; 
     }
 }
 
+@media screen and (max-width: 700px) {
+
+    .founders-heading {
+        font-size: 24px;
+        line-height: 28px;
+        margin-right: 2rem;
+        top: 8%;
+        left: 6%;
+    }
+
+    .founders-image1 {
+        width: 100vw;
+        margin-top: 1%;
+    }
+
+    .founders_skillful-ai {
+        gap: 0.2%; 
+    }
+}
+
+
 @media screen and (max-width: 550px) {
-    .skillfulai_features-heading h1 {
-        font-size: 28px;
-        line-height: 38px;
+
+    .founders-heading {
+        font-size: 20px;
+        line-height: 24px;
+        margin-right: 1.5rem;
+        top: 6%;
+        left: 5%;
+    }
+
+    .founders-image1 {
+        width: 100vw;
+        margin-top: 0.5%;
+    }
+
+    .founders_skillful-ai {
+        gap: 0.1%; 
     }
 }

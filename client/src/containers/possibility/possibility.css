@@ -688,28 +688,367 @@ right: 3%;
 }
 
 
-@media screen and (max-width: 950px) {
-    .skillfulai__possibility {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 992px) {
+  .skillfulai__possibility {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+  }
 
-    .skillfulai__possibility-image {
-        margin: 1rem 0;
-    }
+  .rectangle-gradient, .rectangle-suite {
+      width: 90%;
+      height: auto;
+  }
 
-    .skillfulai__possibility-image img {
-        width: unset;
-        height: unset;
-    }
+  .content-container h2, .content-container p {
+      width: 80%;
+      text-align: center;
+  }
 
-    .skillfulai__possibility-content {
-        margin-top: 2rem;
-    }
+  .get-app-button {
+      margin-left: 0;
+  }
+
+  .skillfulweb-image, .logo-half-image {
+      width: 70%;
+      bottom: -5%;
+      right: -5%;
+  }
+
+  .suite-content-container {
+      margin-left: 0;
+      margin-top: 0;
+      text-align: center;
+  }
+
+  .suite-logo-image {
+      left: 3%;
+  }
+
+  .suite-image1, .suite-rect-trans {
+      width: 50%;
+      bottom: 5%;
+      right: 5%;
+  }
+
+  .suite-image2 {
+      width: 30%;
+      left: 35%;
+  }
+  .skillfulai__possibility-marketplace {
+    flex-direction: column;
 }
 
-@media screen and (max-width: 700px) {
-    .skillfulai__possibility-image img {
-        width: 50%;
-        height: 50%;
-    }
+.rectangle-marketplace {
+    width: 90%;
+    height: auto;
+}
+
+.marketplace-content-container {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.marketplace-content-container h1, .marketplace-content-container p {
+    width: 90%;
+}
+
+.marketplace-image1, .marketplace-rect-trans {
+    width: 70%;
+    bottom: 3%;
+    left: 15%;
+}
+
+.marketplace-logo-image {
+    right: 1%;
+}
+.skillfulai__possibility-creator {
+  flex-direction: column;
+}
+
+.rectangle-creator {
+  width: 90%;
+  height: auto;
+}
+
+.creator-content-container {
+  margin-left: 0;
+  margin-top: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.creator-content-container h1, .creator-content-container p {
+  width: 90%;
+}
+
+.creator-image1 {
+  width: 50%;
+  bottom: 7%;
+  right: 25%;
+}
+
+.creator-image1-text {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 28px;
+}
+.wallet-content-container {
+  margin-left: 0;
+  margin-top: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.wallet-content-container h1, .wallet-content-container p {
+  width: 90%;
+}
+
+.wallet-image1 {
+  width: 50%;
+  left: 25%;
+  bottom: 5%;
+}
+
+.wallet-rect-trans {
+  width: 55%;
+  left: 22.5%;
+  bottom: 3%;
+}
+
+.wallet-logo-image {
+  right: 10px;  /* Adjusted from '2' to '10px' */
+}
+
+.wallet-image2 {
+  width: 35%;
+  left: 32.5%;
+  bottom: 3%;
+}
+.skillfulai__possibility-branded {
+  flex-direction: column;
+}
+
+.rectangle-branded {
+  height: auto; /* Allow it to grow with its content */
+  width: 90%;  /* Adjust based on your desired design for this breakpoint */
+  padding: 20px; /* Provide some padding for inner content */
+}
+
+.branded-content-container {
+  margin-left: 0;
+  margin-top: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.branded-content-container h,
+.branded-content-container h1,
+.branded-content-container p {
+  width: 90%;
+}
+
+.branded-image1 {
+  width: 70%;
+  position: relative; /* Reset it to relative positioning */
+  top: 0;
+  right: 0;
+  margin: 20px auto; /* Center it horizontally */
+}
+
+.skillfulai__possibility-token {
+  flex-direction: column;
+}
+
+.rectangle-token {
+  height: auto; /* Let it grow with content */
+  width: 90%; /* Adjust based on your design */
+  padding: 20px; /* Some inner padding */
+}
+
+.token-content-container {
+  margin-left: 0;
+  margin-top: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.token-content-container h,
+.token-content-container p {
+  width: 90%;
+}
+
+.token-image1 {
+  width: 70%;
+  position: relative; /* Reset it to relative positioning */
+  bottom: 0;
+  right: 0;
+  margin: 20px auto; /* Center it horizontally */
+}
+
+.token-button {
+  margin-top: 2rem;
+  margin-left: 0; /* Reset the margin */
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+  
+}
+
+@media only screen and (max-width: 767px) {
+  .content-container h2 {
+      font-size: 40px;
+      line-height: 50px;
+  }
+
+  .content-container p, .suite-content-container p {
+      font-size: 18px;
+      line-height: 22px;
+      width: 90%;
+  }
+
+  .get-app-button {
+      width: 60%;
+      height: 50px;
+  }
+
+  .skillfulweb-image, .logo-half-image {
+      width: 60%;
+      bottom: 0;
+      right: 0;
+  }
+
+  .suite-content-container h1 {
+      font-size: 28px;
+      line-height: 32px;
+  }
+
+  .suite-logo-image {
+      left: 2%;
+  }
+
+  .suite-image1, .suite-rect-trans {
+      width: 40%;
+      bottom: 3%;
+      right: 3%;
+  }
+
+  .suite-image2 {
+      width: 25%;
+      left: 37.5%;
+  }
+  .marketplace-content-container h1 {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.marketplace-content-container p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.marketplace-image1, .marketplace-rect-trans {
+    width: 60%;
+    bottom: 5%;
+    left: 20%;
+}
+
+.marketplace-logo-image {
+    right: 1%;
+}
+.creator-content-container h1 {
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.creator-content-container p {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.creator-image1 {
+  width: 60%;
+  bottom: 10%;
+  right: 20%;
+}
+
+.creator-image1-text {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 24px;
+}
+.wallet-content-container h1 {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.wallet-content-container p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.wallet-image1 {
+  width: 30%;
+  left: 20%;
+  bottom: 2%;
+}
+
+.wallet-rect-trans {
+  width: 65%;
+  height: 70%;
+  left: 17.5%;
+  bottom: 1%;
+}
+
+.wallet-image2 {
+  width: 20%;
+  left: 30%;
+  bottom: -5%;
+}
+.branded-content-container h {
+  font-size: 45px;
+  margin-top: 20%;
+}
+
+.branded-content-container h1 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.branded-content-container p {
+  font-size: 18px;
+  line-height: 22px;
+  height: auto; /* Allow it to grow with its content */
+}
+
+.branded-image1 {
+  width: 80%;
+}
+.token-content-container h {
+  font-size: 45px;
+  margin-top: 10%;
+}
+
+.token-content-container p {
+  font-size: 18px;
+  line-height: 22px;
+  height: auto; /* Allow it to grow with its content */
+}
+
+.token-image1 {
+  width: 80%;
+}
+
+.token-button {
+  margin-top: 2rem;
+}
 }

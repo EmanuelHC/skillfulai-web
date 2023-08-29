@@ -187,56 +187,88 @@ flex-shrink: 0;
     margin-right: 2rem; /* Margin on the right side */
 }
 
-@media screen and (max-width: 1050px) {
+@media only screen and (max-width: 1024px) {
+    /* Adjusting header content size and alignment */
     .skillfulai__header {
         flex-direction: column;
-    }
-
-    .skillfulai__header-content {
-        margin: 0 0 3rem;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .skillfulai__header-content h1 {
-        font-size: 48px;
-        line-height: 60px;
-    }
-
-    .skillfulai__header-content p {
-        font-size: 16px;
-        line-height: 24px;
+        align-items: center;
+        height: auto;
+        padding: 2rem 0;  /* Providing some padding */
     }
     
-    .skillfulai__header-content__people {
-        flex-direction: column;
+    .skillfulai__header-background {
+        width: 90%;
+        height: 90%;
+    }
+    
+    .skillfulai__header-content {
+        margin-right: 0;
+        margin-top: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .skillfulai__header-content h1 {
+        width: 90%;  /* Adjust as needed */
+        font-size: 48px;  /* Reducing font-size */
+        margin-left: 0;
+    }
+    
+    .skillfulai__header-content p {
+        width: 85%;  /* Adjust as needed */
+        font-size: 18px;  /* Reducing font-size */
+        margin-left: 0;
     }
 
-    .skillfulai__header-content__people p {
-        margin: 0;
+    .skillfulai__header-content button {
+        width: 70%;
+        margin-left: 0;
     }
 
-    .skillfulai__header-content__input input,
-    .skillfulai__header-content__input button {
-        font-size: 16px;
-        line-height: 24px;
+    .skillfulai__header-image img {
+        width: 80%;  /* Adjusting image size */
+        margin-top: 2rem; /* Adjust margin */
+        margin-right: 0;
+    }
+
+    /* Adjusting the line */
+    .skillfulai__header-content::after, .skillfulai__header-background::after {
+        width: 80%;
+    }
+
+    /* Gradient text adjustment */
+    .header_gradient__text {
+        font-size: 48px;
+        line-height: 56px;
+        width: auto;
+        height: auto;
     }
 }
 
-@media screen and (max-width: 490px) {
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+    /* Adjusting header content size and alignment */
     .skillfulai__header-content h1 {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 36px;  /* Further reducing font-size */
     }
-
+    
     .skillfulai__header-content p {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 16px;  /* Further reducing font-size */
     }
 
-    .skillfulai__header-content__input input,
-    .skillfulai__header-content__input button {
-        font-size: 12px;
-        line-height: 16px;
+    .skillfulai__header-content button {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 1rem;
+    }
+
+    .skillfulai__header-image img {
+        width: 90%;  /* Adjusting image size for mobile */
+        margin-top: 1rem; /* Adjust margin */
+    }
+
+    /* Gradient text adjustment */
+    .header_gradient__text {
+        font-size: 36px;
+        line-height: 42px;
     }
 }

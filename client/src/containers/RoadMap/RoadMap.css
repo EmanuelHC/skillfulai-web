@@ -101,21 +101,57 @@
 
 
 @media screen and (max-width: 990px) {
-    .skillfulai_features {
-        flex-direction: column;
+
+    .roadmap-heading h1 {
+        font-size: 50px;
+        line-height: 58px;
+        width: 80%; 
+        margin-left: 2.5%;
     }
 
-    .skillfulai_features-heading {
-        margin: 0 0 2rem 0;
+    .roadmap-image1 {
+        width: 90%;
+        margin-top: 1.5%;
     }
+
+}
+@media screen and (max-width: 700px) {
+
+    .roadmap-heading h1 {
+        font-size: 40px;
+        line-height: 46px;
+        width: 90%;
+        margin-left: 1.5%;
+    }
+
+    .roadmap-container {
+        padding: 1.5rem 0;
+    }
+
+    .roadmap-image1 {
+        width: 85%;
+        margin-top: 1.5%;
+    }
+
 }
 
-
-
-
 @media screen and (max-width: 550px) {
-    .skillfulai_features-heading h1 {
-        font-size: 28px;
-        line-height: 38px;
+
+    .roadmap-heading h1 {
+        font-size: 35px;
+        line-height: 40px;
+        width: 100%;
+        margin-left: 0;
     }
+
+    .roadmap-container {
+        padding: 1rem 0;
+        width: 100vw;
+    }
+
+    .roadmap-image1 {
+        width: 100vw;
+        margin-top: 1%;
+    }
+
 }

@@ -38,3 +38,80 @@
         opacity: 1;
     }
 }
+
+
+/* For tablet devices */
+@media only screen and (max-width: 1024px) {
+    .skilfullai__brand {
+        height: 80px;  /* Reduce height */
+        margin-top: 0;
+        margin-left: 2%;  /* Reduce margin */
+    }
+
+    .skilfullai__brand-row {
+        width: calc(100% - 2rem);  /* Reduce width */
+    }
+
+    .skilfullai__brand-row img {
+        max-width: 90%;  /* Max width to make sure it fits */
+        margin: 0 0.2rem;  /* Reduce space between */
+    }
+
+    /* Adjustments for .skillfulai__header and related elements */
+    .skillfulai__header {
+        height: 90%; /* Reduce header height */
+    }
+
+    .skillfulai__header-content h1 {
+        font-size: 48px; /* Reduce font size for tablet */
+        width: auto; /* Auto width to fit content */
+    }
+
+    .skillfulai__header-content p {
+        font-size: 18px; /* Reduce font size for tablet */
+        width: auto; /* Auto width to fit content */
+    }
+
+    .skillfulai__header-image img {
+        width: 300px; /* Reduce image width */
+        height: 300px; /* Reduce image height */
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+    .skilfullai__brand {
+        height: 60px;  /* Further reduce height */
+        margin-left: 1%;  /* Further reduce margin */
+    }
+
+    .skilfullai__brand-row {
+        overflow-x: scroll;  /* Enable horizontal scrolling */
+        width: 100%;  /* Full width */
+    }
+
+    .skilfullai__brand-row img {
+        max-width: 80%;  /* Max width to make sure it fits */
+        margin: 0 0.1rem;  /* Further reduce space between */
+    }
+    
+    /* Adjustments for .skillfulai__header and related elements */
+    .skillfulai__header {
+        height: 100%; /* Adjust header height for mobile */
+    }
+
+    .skillfulai__header-content h1 {
+        font-size: 36px; /* Further reduce font size for mobile */
+        margin-left: 2rem; /* Adjust margin for mobile */
+    }
+
+    .skillfulai__header-content p {
+        font-size: 16px; /* Further reduce font size for mobile */
+        margin-left: 2rem; /* Adjust margin for mobile */
+    }
+
+    .skillfulai__header-image img {
+        width: 250px; /* Further reduce image width */
+        height: 250px; /* Further reduce image height */
+    }
+}
