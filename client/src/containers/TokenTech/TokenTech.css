@@ -288,6 +288,7 @@
         width: 100vw;
         margin-top: 0;
         position: center;
+        margin-left: 3%;
     }
 
     .tokenomics-heading h1, .technology-heading h1 {
