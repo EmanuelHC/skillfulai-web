@@ -84,6 +84,7 @@
     height: 60px;
     flex-shrink: 0;
     margin-left: -50%;
+    z-index: 100;
   }
   
   .get-app-button:hover {
@@ -754,6 +755,7 @@ right: 3%;
 
   .get-app-button {
       margin-left: 0;
+      z-index: 100;
   }
 
   .skillfulweb-image, .logo-half-image {

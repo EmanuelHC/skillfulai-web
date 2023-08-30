@@ -2,9 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
- 
-
-    height: 10%;
+    position: relative;
 }
 
 .skillfulai__navbar-top {
@@ -40,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 7%; /* Same margin as the logo for symmetry */
+    margin-right: -50%; /* Same margin as the logo for symmetry */
     gap: 2rem;
 }
 
@@ -137,74 +135,99 @@
     transform: translateX(-50%);
 }
 
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100; /* Ensure the button is above other elements */
+  }
+  
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust as needed */
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50; /* Ensure the menu is above other elements but below the button */
+  }
 
-
-@media screen and (max-width: 1200px) {
-    .skillfulai__navbar-links::after {
-        width: 1000px; /* Reduced width of the line to fit better */
+@media (min-width: 768px) {
+    .menu-button {
+      display: none;
     }
+  }
+  
+  /* Adjust the flex properties of the navbar top to ensure all child elements are visible */
+  .skillfulai__navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap; /* Ensure the child elements do not wrap */
+  }
+  
+  /* Style for the mobile menu button */
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style for the mobile navigation */
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust as needed */
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  @media (max-width: 767px) {
     .skillfulai__navbar-links {
-        width: 800px; /* Adjusted to align with the modified line width */
-    }
-    .skillfulai__navbar-buttons {
-        gap: 1.2rem; /* Reduce the gap between buttons for better fit */
-    }
-}
-
-/* For tablets or smaller desktops */
-@media screen and (max-width: 992px) {
-    .skillfulai__navbar-links {
-        flex-direction: column; /* Stack the links */
-        width: auto; /* Reset to auto for better alignment */
-        align-items: flex-start; /* Align to the start */
-    }
-    .skillfulai__navbar-links_container {
-        flex-direction: column; /* Stack the link containers */
-        align-items: flex-start; /* Align to the start */
-    }
-    .skillfulai__navbar-links_container p {
-        margin: 0.5rem 0; /* Adjust margins for vertical alignment */
-    }
-    .skillfulai__navbar-links::after {
-        display: none; /* Remove the line as it might not align well with vertically stacked links */
+      display: none;
     }
     .skillfulai__navbar-brand_container {
-        margin-top: 1.5%; /* Adjust margin to center better */
+        margin-left: 0%; /* Reduced margin for smaller screens */
+        margin-top: 1%; /* Reduced margin for smaller screens */
+        gap: 0.2rem; /* Reduced gap for smaller screens */
     }
-}
-
-/* For mobile devices */
-@media screen and (max-width: 768px) {
-    .skillfulai__navbar-top {
-        flex-direction: column; /* Stack elements */
-        align-items: flex-start; /* Align to the start */
-        padding: 1rem; /* Add some padding for breathing space */
-    }
-    .skillfulai__navbar-brand_container {
-        margin-left: 3%; /* Reduce left margin */
-        margin-top: 1rem; /* Adjust top margin */
+    .skillfulai__navbar-top{
+        flex-direction: column;
     }
     .skillfulai__navbar-buttons {
-        margin-right: 3%; /* Reduce right margin */
-        gap: 1rem; /* Reduce gap */
+        margin-right: 0%;
+        margin-top: 1%;
     }
+    
     .skillfulai__navbar-buttons button {
-        font-size: 16px; /* Slightly reduce font size for better fit */
-        padding: 0.4rem 0.8rem; /* Adjust padding */
-    }
-}
-
-/* For very small mobile devices */
-@media screen and (max-width: 576px) {
-    .skillfulai__navbar-brand_container {
-        margin-left: 2%; /* Further reduce left margin */
-    }
-    .skillfulai__navbar-buttons {
-        margin-right: 2%; /* Further reduce right margin */
-        gap: 0.5rem; /* Further reduce gap */
-    }
-    .skillfulai__navbar-buttons button {
-        font-size: 14px; /* Further reduce font size */
-        padding: 0.3rem 0.6rem; /* Adjust padding */
+        padding: 0.5rem 0.5rem;
+        font-size: 12px;
+        width: 75px;
+        height: 35px;
+        display: flex;           /* Added to center the text */
+        justify-content: center; /* Horizontally center the text */
+        align-items: center;     /* Vertically center the text */
+        white-space: nowrap;     /* Prevent text from wrapping to the next line */
+        overflow: hidden;        /* Hide any overflowing text */
+        text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
     }
 }

@@ -60,9 +60,20 @@ const Navbar = () => {
               <button type="button" onClick={redirectToWhitelistForm} > Sign Up </button>
             </div>
           </div>
-
-      
+             {/* Menu Toggle Button */}
+        <button className="menu-button" onClick={() => setToggleMenu(!toggleMenu)}>
+          {toggleMenu ? <RiCloseLine /> : <RiMenu3Line />}
+        </button>
         </div>
+
+        {/* Conditionally render the menu links based on the state of the mobile menu */}
+        {toggleMenu && (
+          <div className='mobile-nav'>
+            <Menu />
+          </div>
+        )}
+
+        {/* Desktop Menu */}
 
         <div className='skillfulai__navbar-links'>
             <div className='skillfulai__navbar-links_container'>

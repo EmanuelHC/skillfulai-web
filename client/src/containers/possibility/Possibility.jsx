@@ -18,8 +18,10 @@ import skillful_coin from '../../assets/skillful_coin.png'
 
 const Possibility = () => {
   const redirectToWhitelistForm = () => {
+    console.log("Button clicked!"); // This will log to the console when the button is clicked
     window.open('https://docs.google.com/forms/d/1Vks6Xlkcxw89keWjrOJiSylOY97Ii8LcsSTynb0lyjY/viewform?edit_requested=true', '_blank');
-  };
+};
+
 
 
 return (
