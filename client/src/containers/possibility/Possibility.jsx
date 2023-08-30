@@ -54,7 +54,7 @@ return (
     <div className="skillfulai__possibility-marketplace">
       <div className="rectangle-marketplace">
         <img src={rect_trans} alt="rect_trans" className="marketplace-rect-trans"  />
-        <img src={marketplace} alt="skillfulweb" className="marketplace-image1"  />
+        <img src={marketplace} alt="marketplace" className="marketplace-image1"  />
         <div className="marketplace-content-container">
           <h1>Marketplace</h1>
           <p>Skillful AI's unique AI NFT Marketplace offers control, quality assurance, and tailored user experiences. This integration enhances AI agent creation, customization, and listing, facilitating seamless user interaction.</p>

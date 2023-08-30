@@ -260,10 +260,24 @@
     .skillfulai__wskai-row1 p {
         font-size: 16px; /* Further reduce font size */
         margin-right: 5%; 
+        display: none;
     }
 
     .skillfulai__wskai-row2 h1 {
         font-size: 28px; /* Further reduce font size */
+    }
+
+    .skillful-ai img {
+        width: 50%; /* Reduce the width of each image to 70% of its original size */
+        height: auto; /* Ensure the images scale proportionally */
+        
+    }
+    
+    /* If you want to reduce the overall size of the div as well, you can add padding or adjust its width */
+    .skillful-ai {
+       
+        width: 100%; /* Optional: Adjust the width of the div */
+        margin: 0 auto; /* Optional: Center the div if needed */
     }
 
     .skillfulai__wskai-row3 .skillfulai__features-container__feature {

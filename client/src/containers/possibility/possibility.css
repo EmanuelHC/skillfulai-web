@@ -689,7 +689,7 @@ right: 3%;
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 767px) {
   .skillfulai__possibility {
       flex-direction: column;
       align-items: center;
@@ -784,12 +784,13 @@ right: 3%;
       bottom: -50%;
   }
 
-  .suite-image1, .suite-rect-trans {
-    width: 50%;
-    bottom: 5%;
-    right: 0;  /* Position it to the right */
-    position: absolute; 
-  }
+  
+.suite-image1, .suite-rect-trans {
+    width: 45%;
+    bottom: 3%;
+    right: 3%;
+}
+
 
   .suite-image2 {
       width: 30%;
@@ -818,15 +819,41 @@ right: 3%;
     width: 90%;
 }
 
+
+.marketplace-content-container {
+  gap: 10px;
+}
+
+.marketplace-content-container h1 {
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  display: flex;
+  height: 50px;
+
+
+
+}
+
+.marketplace-content-container p {
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 100px; 
+ 
+}
+
 .marketplace-image1, .marketplace-rect-trans {
-    width: 70%;
-    bottom: 3%;
-    left: 15%;
+  width: 45%;
+  bottom: 0%;
+  left: 2%;
 }
 
 .marketplace-logo-image {
-    right: 1%;
+  right: 1%;
 }
+
+
 .skillfulai__possibility-creator {
   flex-direction: column;
 }
@@ -835,6 +862,8 @@ right: 3%;
   width: 90%;
   height: auto;
 }
+
+
 
 .creator-content-container {
   margin-left: 0;
@@ -859,6 +888,13 @@ right: 3%;
   text-align: center;
   font-size: 28px;
 }
+
+.skillfulai__possibility-wallet {
+  margin-top: 0%;
+  
+}
+
+
 .wallet-content-container {
   margin-left: 0;
   margin-top: 0;
@@ -882,14 +918,54 @@ right: 3%;
   bottom: 3%;
 }
 
-.wallet-logo-image {
-  right: 10px;  /* Adjusted from '2' to '10px' */
+
+
+
+.wallet-content-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%; 
+}
+
+.wallet-content-container h1 {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.wallet-content-container p {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.wallet-image1 {
+  width: 13%;
+  margin-left:  10%;
+  bottom: 2%;
+}
+
+.wallet-rect-trans {
+  width: 65%;
+  height: 70%;
+  left: 17.5%;
+  bottom: 1%;
 }
 
 .wallet-image2 {
-  width: 35%;
-  left: 32.5%;
-  bottom: 3%;
+  
+  bottom: 0.1rem;
+  width: 8%;
+  margin-left:  10%;
+  display: none ;
+  
+}
+
+.wallet-logo-image {
+  margin-right: -33%;
+  margin-bottom: -10%;
+  position: relative;
+
 }
 .skillfulai__possibility-branded {
   flex-direction: column;
@@ -922,14 +998,21 @@ right: 3%;
   margin: 20px auto; /* Center it horizontally */
 }
 
+
 .skillfulai__possibility-token {
   flex-direction: column;
+  width: 90vw;
 }
 
 .rectangle-token {
+  padding: 40px; /* Some inner padding */
   height: auto; /* Let it grow with content */
-  width: 90%; /* Adjust based on your design */
-  padding: 20px; /* Some inner padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  position: relative;
 }
 
 .token-content-container {
@@ -937,6 +1020,24 @@ right: 3%;
   margin-top: 0;
   align-items: center;
   text-align: center;
+  display: flex;
+  align-items: flex-start; /* Align children to the left */
+  justify-content: flex-start; /* Align children to the top */
+  order: 2;
+  flex-direction: column;
+}
+
+.token-content-container h {
+  width: 100%;  
+  font-size: 28px;
+  text-align: center;  /* Align text to the left */
+}
+
+.token-content-container p {
+  font-size: 12px;
+  line-height: 22px;
+  text-align: left;  /* Align text to the left */
+  margin-top: -20%;  /* Adjusted to move the paragraph up */
 }
 
 .token-content-container h,
@@ -945,19 +1046,30 @@ right: 3%;
 }
 
 .token-image1 {
-  width: 70%;
-  position: relative; /* Reset it to relative positioning */
+  width: 70%;  
+  order: 2;
+  position: absolute;
+  bottom: 0;
+  right: -18%;
+}
+
+.token-image1 img {
+  position: absolute;
   bottom: 0;
   right: 0;
-  margin: 20px auto; /* Center it horizontally */
+  
+  height: auto;
 }
 
 .token-button {
-  margin-top: 2rem;
   margin-left: 0; /* Reset the margin */
-  position: relative;
+  margin-top: 2rem;
+  order: 3;
+  width: 100%;
+  position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0%;
+  max-width: 150px;
 }
   
 }
@@ -985,56 +1097,21 @@ right: 3%;
       right: 0;
   }
 
-  .suite-content-container {
 
-  }
 
   .suite-content-container h1 {
       font-size: 28px;
       line-height: 32px;
   }
 
-  .suite-logo-image {
-      left: 2%;
-  }
-
-  .suite-image1, .suite-rect-trans {
-      width: 40%;
-      bottom: 3%;
-      right: 3%;
-  }
 
   .suite-image2 {
       width: 15%;
       left: 37.5%;
   }
-  .marketplace-content-container h1 {
-    font-size: 28px;
-    line-height: 32px;
-    text-align: center;
-    display: flex;
-    height: 50px;
-
  
 
-}
 
-.marketplace-content-container p {
-    font-size: 12px;
-    line-height: 22px;
-    text-align: center;
-    margin-bottom: 100px; 
-}
-
-.marketplace-image1, .marketplace-rect-trans {
-    width: 30%;
-    bottom: 0%;
-    left: 2%;
-}
-
-.marketplace-logo-image {
-    right: 1%;
-}
 .creator-content-container {
   display: flex;
 
@@ -1076,45 +1153,7 @@ right: 3%;
   right: -10;
   
 }
-.wallet-content-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
 
-.wallet-content-container h1 {
-  font-size: 26px;
-  line-height: 30px;
-}
-
-.wallet-content-container p {
-  font-size: 12px;
-  line-height: 22px;
-}
-
-.wallet-image1 {
-  width: 12%;
-  margin-left:  10%;
-  bottom: 2%;
-}
-
-.wallet-rect-trans {
-  width: 65%;
-  height: 70%;
-  left: 17.5%;
-  bottom: 1%;
-}
-
-.wallet-image2 {
-  width: 8%;
-  margin-left:  10%;
-  margin-bottom: -2%;
-}
-
-.wallet-logo-image {
-  margin-bottom: -22%;  /* Adjusted from '2' to '10px' */
-}
 
 .branded-content-container{
   display: flex;
@@ -1155,52 +1194,5 @@ right: 3%;
   z-index: 0;
 }
 
-.skillfulai__possibility-token {
-  width: 100vw;
-}
 
-.rectangle-token {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  margin: auto;
-  position: relative;
-}
-
-.token-content-container {
-  width: 50%; 
-  order: 2;
-}
-
-.token-content-container h {
-  width: 100%;  /* set this to 100% so it takes up all available width in its container */
-  font-size: 48px;
-}
-
-.token-content-container p {
-  font-size: 12px;
-  line-height: 22px;
-  height: auto;
-}
-
-.token-image1 {
-  width: 50%;  /* give equal space to image and content */
-  order: 1;
-}
-
-.token-image1 img {
-  width: 100%;  /* make sure the image takes the full width of its container */
-  height: auto;
-}
-
-.token-button {
-  margin-top: 2rem;
-  order: 3;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0%;
-  max-width: 150px;
-}
 }
