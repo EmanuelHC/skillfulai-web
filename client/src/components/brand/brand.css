@@ -115,3 +115,11 @@
         height: 250px; /* Further reduce image height */
     }
 }
+
+@media (max-width: 1600px) {
+    .skilfullai__brand {
+        margin-top: -3%; /* Move the container upward */
+    }
+
+
+}

@@ -61,9 +61,9 @@ const Navbar = () => {
             </div>
           </div>
              {/* Menu Toggle Button */}
-        <button className="menu-button" onClick={() => setToggleMenu(!toggleMenu)}>
-          {toggleMenu ? <RiCloseLine /> : <RiMenu3Line />}
-        </button>
+          <button className="menu-button" onClick={() => setToggleMenu(!toggleMenu)}>
+           
+          </button>
         </div>
 
         {/* Conditionally render the menu links based on the state of the mobile menu */}
