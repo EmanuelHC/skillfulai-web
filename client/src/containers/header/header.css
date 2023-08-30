@@ -191,7 +191,7 @@ flex-shrink: 0;
     margin-right: 2rem; /* Margin on the right side */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .skillfulai__header {
         /* Adjust the height or other properties as needed for mobile */
@@ -244,11 +244,11 @@ flex-shrink: 0;
         height: auto;
     }
 
-    .skillfulai__header-image img {
-        /* Adjust size and other properties for mobile */
-        width: 250px;
+    body .skillfulai__header-image img {
+        width: 40%;
         height: auto;
-        margin-top: 1rem;
+        margin-top: -45%;
+        margin-left: 0;
         margin-right: 0;
     }
 
@@ -257,9 +257,5 @@ flex-shrink: 0;
         margin-left: 0;
     }
 
-    /* Adjusting the side margins for images for mobile */
-    .skillfulai__header-image img {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  
 }
