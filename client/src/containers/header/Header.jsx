@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="skillfulai__header" id="home">
       {/* Move the background image outside of the content div */}
-      /* <img src={back} alt='back' className="skillfulai__header-background" /> */
+      {/* <img src={back} alt='back' className="skillfulai__header-background" /> */}
 
       <div className="skillfulai__header-content">
         <h1 className="header_gradient__text">Let&apos;s Build Something amazing with Skillful-AI</h1>

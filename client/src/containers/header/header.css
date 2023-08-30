@@ -5,6 +5,10 @@
     margin-top: 0rem;
     position: relative;
     overflow: hidden; /* Add this line */
+    background-image: url('../../assets/backg2.png');
+    background-position: center -200%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .skillfulai__header-background {
@@ -187,88 +191,75 @@ flex-shrink: 0;
     margin-right: 2rem; /* Margin on the right side */
 }
 
-@media only screen and (max-width: 1024px) {
-    /* Adjusting header content size and alignment */
+@media (max-width: 768px) {
+
     .skillfulai__header {
+        /* Adjust the height or other properties as needed for mobile */
+        height: 100%;
         flex-direction: column;
         align-items: center;
-        height: auto;
-        padding: 2rem 0;  /* Providing some padding */
-    }
-    
-    .skillfulai__header-background {
-        width: 90%;
-        height: 90%;
-    }
-    
-    .skillfulai__header-content {
-        margin-right: 0;
-        margin-top: 2rem;
-        align-items: center;
         text-align: center;
+       
     }
-    
+
+    .skillfulai__header-background {
+        /* Adjust the width and height for mobile */
+        width: 100%;
+        height: auto;
+    }
+
+    .skillfulai__header-content {
+        /* Reset margins and other properties for mobile */
+        margin-right: 0;
+        margin-top: 1rem;
+        align-items: center;
+    }
+
     .skillfulai__header-content h1 {
-        width: 90%;  /* Adjust as needed */
-        font-size: 48px;  /* Reducing font-size */
+        /* Adjust font size and other properties for mobile */
+        font-size: 28px;
+        width: auto;
         margin-left: 0;
     }
-    
+
     .skillfulai__header-content p {
-        width: 85%;  /* Adjust as needed */
-        font-size: 18px;  /* Reducing font-size */
+        /* Adjust font size and other properties for mobile */
+        font-size: 12px;
+        width: auto;
         margin-left: 0;
     }
 
     .skillfulai__header-content button {
-        width: 70%;
+        /* Adjust size and other properties for mobile */
+        width: 200px;
+        font-size: 18px;
+        margin-top: 2rem;
         margin-left: 0;
     }
 
-    .skillfulai__header-image img {
-        width: 80%;  /* Adjusting image size */
-        margin-top: 2rem; /* Adjust margin */
-        margin-right: 0;
-    }
-
-    /* Adjusting the line */
-    .skillfulai__header-content::after, .skillfulai__header-background::after {
-        width: 80%;
-    }
-
-    /* Gradient text adjustment */
     .header_gradient__text {
-        font-size: 48px;
-        line-height: 56px;
+        /* Adjust font size and other properties for mobile */
+        font-size: 32px;
         width: auto;
         height: auto;
     }
-}
-
-/* For mobile devices */
-@media only screen and (max-width: 768px) {
-    /* Adjusting header content size and alignment */
-    .skillfulai__header-content h1 {
-        font-size: 36px;  /* Further reducing font-size */
-    }
-    
-    .skillfulai__header-content p {
-        font-size: 16px;  /* Further reducing font-size */
-    }
-
-    .skillfulai__header-content button {
-        width: 100%; /* Full width for mobile */
-        margin-bottom: 1rem;
-    }
 
     .skillfulai__header-image img {
-        width: 90%;  /* Adjusting image size for mobile */
-        margin-top: 1rem; /* Adjust margin */
+        /* Adjust size and other properties for mobile */
+        width: 250px;
+        height: auto;
+        margin-top: 1rem;
+        margin-right: 0;
     }
 
-    /* Gradient text adjustment */
-    .header_gradient__text {
-        font-size: 36px;
-        line-height: 42px;
+    /* Adjusting the gap between images for mobile */
+    .skillfulai__header-content h1, .skillfulai__header-content p, .skillfulai__header-content button {
+        margin-left: 0;
+    }
+
+    /* Adjusting the side margins for images for mobile */
+    .skillfulai__header-image img {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
