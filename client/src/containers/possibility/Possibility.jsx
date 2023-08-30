@@ -26,7 +26,7 @@ return (
   <div className="skillfulai_possibility section__padding" id="possibility">
     <div className="skillfulai__possibility-app">
         <div className="rectangle-gradient">
-          <div className="content-container">
+          <div className="app-content-container">
             <h2>The Skillful AI App</h2>
             <p>The Future is Now Unleash your creativity with Skillful AI. Personalize, innovate and revolutionize the way you interact with technology. With Skillful AI, you're not just adapting to the future, you're creating it.</p>
            
