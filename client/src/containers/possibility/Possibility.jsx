@@ -94,21 +94,14 @@ return (
           <img src={branded} alt="branded" className="branded-image1" />        
       </div>
     </div>
-    <div className="skillfulai__possibility-token">
-      <div className="rectangle-token">
-      <div className="token-content-container">
-          <h>Token</h>
-          
-          <p>
-            The Utility powerhouse of the Skillful AI ecosystem.<br />
-            <br />
-            Access AI Creator tools, buy and sell on the marketplace, cover all your fees and subscriptions with $SKAI.
-          </p>
-        </div>
-          <img src={skillful_coin} alt="skillfull_coin" className="token-image1" />  
-          <button className="token-button" onClick={redirectToWhitelistForm}>BUY TOKEN</button>      
-      </div>
+    <div className="bg-gradient-to-br from-purple-500 via-pink-500 to-black bg-cover bg-no-repeat bg-center relative z-10 w-[1180px] h-[700px] rounded-lg shadow-md flex items-center justify-center" style={{ backgroundImage: "url('../../assets/token_back.png')" }}>
+    <div className="flex flex-col space-y-2.5 ml-[-55%] mt-[-13%]">
+        <h className="text-white font-bold text-5xl w-[365px] mt-[-10%] leading-none">Token</h>
+        <p className="text-white font-medium text-lg w-[418px] h-[305px] leading-6">The Utility powerhouse of the Skillful AI ecosystem... </p>
     </div>
+    <img src={skillful_coin} alt="skillfull_coin" className="absolute bottom-[-3%] right-0 w-[80%] z-10" />
+    <button className="absolute bottom-[4%] right-[3%] bg-gradient-to-r from-pink-500 to-purple-500 text-white uppercase text-lg px-6 py-3 rounded-md transform transition-transform transition-shadow hover:translate-y-[-2px] hover:shadow-lg" onClick={redirectToWhitelistForm}>BUY TOKEN</button>
+</div>
     
     
 
